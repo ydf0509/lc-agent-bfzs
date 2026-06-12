@@ -1,0 +1,88 @@
+{
+  // LLM 提供商配置
+  "provider": {
+    "litellm": {
+      "api_key": "sk-no-key-needed",
+      "base_url": "http://localhost:4000/v1",
+      "models": [
+        {
+          "id": "ark-deepseek-v4-flash",
+          "context_limit": 200000
+        },
+        {
+          "id": "ds-deepseek-v4-flash",
+          "context_limit": 200000
+        },
+         
+         {
+          "id": "ark-glm-5.1",
+          "context_limit": 200000
+        }
+      ]
+    }
+  },
+
+  "agent": {
+    "system_prompt": "你是一个智能助手，擅长文件管理、数据分析和日常辅助任务。请用中文回答问题。",
+    "default_model": "ds-deepseek-v4-flash",
+    "streaming": true
+  },
+
+  "database": {
+    "url": "sqlite+aiosqlite:///./bfzs_data.db",
+    "checkpoint_path": "./bfzs_checkpoints.db"
+  },
+
+  "skills": {
+    "directory": "./myskills"
+  },
+
+  "mcp_servers": {
+    // Web 搜索 MCP
+    "web-search": {
+      "type": "sse",
+      "url": "http://localhost:3000/sse",
+      "enabled": true
+    },
+
+    // 文件系统 MCP：让 AI 读写指定目录的文件，这个是最知名的第三方文件系统MCP
+    // ⚠ 必须至少提供一个绝对路径，AI 只能访问列出的目录
+    // 如果编程，不要接入这个filesystem mcp，serena就够了，接入太多mcp会浪费tokens和加大ai决策难度。
+    "filesystem": {
+      "type": "local",
+      "command": ["npx", "-y", "@modelcontextprotocol/server-filesystem", "D:/codes/nb_agent_bfzs"]
+    },
+
+    // 用户可以先独立方式启动nbrag mcp web服务，也可以使用local模式启动
+    "nbrag": {
+      "type": "http",
+      "url": "http://localhost:9101/mcp"
+    },
+
+    // Context7 MCP
+    "context7": {
+      "type": "local",
+      "command": ["npx", "-y", "@upstash/context7-mcp@latest"],
+      "enabled": true
+    },
+
+    // Serena 代码分析 MCP — 已修正路径
+    "serena": {
+      "type": "local",
+      "command": ["C:/Users/ydf6/.local/bin/serena.exe", "start-mcp-server", "--project", "D:/codes/lc-agent"],
+      "enabled": true
+    },
+
+    // LangChain 官方文档 MCP
+    "docs-langchain": {
+      "type": "http",
+      "url": "https://docs.langchain.com/mcp"
+    },
+
+    // LangChain API 参考 MCP
+    "reference-langchain": {
+      "type": "http",
+      "url": "https://reference.langchain.com/mcp"
+    }
+  }
+}
