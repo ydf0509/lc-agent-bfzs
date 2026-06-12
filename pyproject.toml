@@ -1,0 +1,22 @@
+[project]
+name = "lc-agent-bfzs"
+version = "0.1.0"
+description = "基于 lc-agent 框架开发的自定义 Agent 应用"
+requires-python = ">=3.12"
+dependencies = [
+    "lc-agent",
+]
+
+[project.scripts]
+bfzs = "bfzs.main:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["bfzs"]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 120
