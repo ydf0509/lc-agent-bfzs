@@ -93,6 +93,16 @@ metadata:
 
 编辑 `config.jsonc` 配置 LLM、数据库、Skills 目录等。支持 JSONC 注释和 `{env:VAR}` 环境变量。
 
+## 思考过程显示
+
+框架使用 `ChatOpenAIReasoning` 类自动提取模型的推理内容（`reasoning_content`），支持在前端显示"思考中"面板。
+
+| 模型 | 思考过程 | 说明 |
+|------|:---:|------|
+| `ds-deepseek-v4-flash` | 始终显示 | DeepSeek 官方 API |
+| `ark-deepseek-v4-flash` | 始终显示 | 字节方舟 Coding Plan |
+| `ark-glm-5.1` | 复杂任务时显示 | 简单问题不触发思考 |
+
 ## 与框架的关系
 
 ```
@@ -103,5 +113,5 @@ lc-agent-bfzs（本项目，用户业务代码）
 
 - 不修改框架代码
 - 通过 import + 装饰器 + 配置文件扩展
-- 框架提供 Web UI / API / 引擎 / 持久化
+- 框架提供 Web UI / API / 引擎 / 持久化 / reasoning 提取
 - 本项目只写业务逻辑（tools / agents / skills）
