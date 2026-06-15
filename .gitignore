@@ -216,3 +216,9 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+bfzs_checkpoints.db
+bfzs_checkpoints.db-shm
+bfzs_checkpoints.db-wal
+bfzs_data.db
+
+
