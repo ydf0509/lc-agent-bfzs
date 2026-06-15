@@ -2,7 +2,7 @@
 
 import argparse
 from pathlib import Path
-
+from bfzs import init_loggers
 
 def main():
     parser = argparse.ArgumentParser(description="lc-agent-bfzs 自定义 Agent 应用")

@@ -31,10 +31,10 @@ description: Use when asked to write code using LangChain, LangGraph, or DeepAge
 
 ```markdown
 # 先 resolve 获取最新 library ID
-mcp_context7_resolve-library-id(libraryName="LangChain", query="create_react_agent latest API")
+mcp_context7_resolve-library-id(libraryName="LangChain", query="create_agent latest API")
 
 # 再 query 获取详细文档
-mcp_context7_query-docs(libraryId="/websites/langchain", query="How to use create_react_agent with tools in LangChain 2026")
+mcp_context7_query-docs(libraryId="/websites/langchain", query="How to use create_agent with tools in LangChain 2026")
 ```
 
 ### 第二阶：nbrag 知识库检索

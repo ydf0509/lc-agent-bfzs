@@ -11,8 +11,7 @@ from __future__ import annotations
 from typing import Annotated, TypedDict
 
 from langchain_core.messages import AIMessage, HumanMessage, SystemMessage
-from langchain_openai import ChatOpenAI
-from langgraph.graph import StateGraph, END
+from langgraph.graph import StateGraph, START, END
 from langgraph.graph.message import add_messages
 
 
@@ -41,19 +40,31 @@ def build_research_agent(config: dict):
     Returns:
         编译后的 LangGraph StateGraph (CompiledGraph)
     """
+    provider_name = ""
     provider_conf = {}
     for name, conf in config.get("provider", {}).items():
         if isinstance(conf, dict) and conf.get("models"):
+            provider_name = name
             provider_conf = conf
             break
 
     model_id = config.get("agent", {}).get("default_model", "gpt-4")
-    llm = ChatOpenAI(
-        model=model_id,
-        base_url=provider_conf.get("base_url") or None,
-        api_key=provider_conf.get("api_key", "not-set"),
-        temperature=0.3,
-    )
+    base_url = provider_conf.get("base_url", "")
+    api_key = provider_conf.get("api_key", "not-set")
+
+    if base_url:
+        from lc_agent.core.chat_model import ChatOpenAIReasoning
+        llm = ChatOpenAIReasoning(
+            model=model_id,
+            base_url=base_url,
+            api_key=api_key,
+            temperature=0.3,
+            stream_usage=True,
+        )
+    else:
+        from langchain.chat_models import init_chat_model
+        model_str = f"{provider_name}:{model_id}" if provider_name else model_id
+        llm = init_chat_model(model_str, api_key=api_key, temperature=0.3, stream_usage=True)
 
     async def plan_node(state: ResearchState) -> dict:
         """制定研究计划"""
@@ -115,7 +126,7 @@ def build_research_agent(config: dict):
     graph.add_node("research", research_node)
     graph.add_node("summarize", summarize_node)
 
-    graph.set_entry_point("plan")
+    graph.add_edge(START, "plan")
     graph.add_edge("plan", "research")
     graph.add_conditional_edges("research", should_continue_research, {
         "research": "research",
