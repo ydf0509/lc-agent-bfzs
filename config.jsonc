@@ -18,6 +18,16 @@
         // {"id": "ali-MiniMax-M2.5", "context_limit": 200000},
         // === DeepSeek 官方 ===
         {"id": "ark-deepseek-v4-flash", "context_limit": 200000},
+        {"id": "zzz-gpt-5.4", "context_limit": 400000},
+        {"id": "zzz-gpt-5.5", "context_limit": 400000},
+
+
+         {"id": "zzz-auto-gpt-5.4", "context_limit": 400000},
+        {"id": "zzz-auto-gpt-5.5", "context_limit": 400000},
+
+         {"id": "zzz-fallback-gpt-5.4", "context_limit": 400000},
+        {"id": "zzz-fallback-gpt-5.5", "context_limit": 400000},
+
         {"id": "ds-deepseek-v4-pro", "context_limit": 200000},
         {"id": "ds-deepseek-v4-flash", "context_limit": 200000},
         // === 字节方舟 Coding Plan ===

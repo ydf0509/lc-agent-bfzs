@@ -107,6 +107,10 @@ if not LOG_PATH:
         LOG_PATH = Path(home_path) / Path('pythonlogs')  # Linux/Mac permissions are strict; non-root users can't write to /pythonlogs.
 # print('LOG_PATH:',LOG_PATH)
 
+LOG_PATH = Path(__file__).resolve().parent.joinpath("pythonlogs") 
+
+
+
 LOG_FILE_HANDLER_TYPE = 6  # 1 2 3 4 5 6 7   # nb_log file rotation - all options are multi-process safe.
 """
 LOG_FILE_HANDLER_TYPE can be set to one of the following values:

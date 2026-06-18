@@ -1,0 +1,514 @@
+2026-06-18 14:43:09  "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\nb_log\__init__.py:53" -[print]-<module>- [0m
+    
+    .__   __. .______           __        ______     _______ 
+    |  \ |  | |   _  \         |  |      /  __  \   /  _____|
+    |   \|  | |  |_)  |  ______|  |     |  |  |  | |  |  __  
+    |  . `  | |   _  <  |______|  |     |  |  |  | |  | |_ | 
+    |  |\   | |  |_)  |        |  `----.|  `--'  | |  |__| | 
+    |__| \__| |______/         |_______| \______/   \______|      
+    
+         [0m
+ 2026-06-18 14:43:09  "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\nb_log\__init__.py:82" -[print]-<module>- [0m
+        1)When using PyCharm, it is strongly recommended to re-customize the theme colors in PyCharm's console as follows, otherwise the color display may be harsh on the eyes. The colors specified in the code are just approximate red, yellow, blue, and green. The display effect varies across different IDE software, themes, and fonts, so users need to set them up themselves.
+        The setup method is: Open PyCharm -> File -> Settings -> Editor -> Color Scheme -> Console Colors, select monokai, click to expand ANSI colors,
+        and re-modify 7 custom colors: set Blue to 0454F3, Cyan to 06F0F6, Green to 13FC02, Magenta to ff1cd5, red to F80606, yellow to EAFA04, gray to FFFFFF, and white to FFFFFF.
+        Different versions of PyCharm, themes, or IDEs can be set according to the actual console display.
+
+        2)When using tools like xshell or finashell to connect to Linux, you can also customize the theme colors, or use the default colors of the shell connection tool.
+
+        Color effect as shown at https://ibb.co/qRssXTr
+
+        You can modify the default logging behavior when the get_logger method is called without parameters in nb_log_config.py at the root directory of the current project.
+
+        nb_log documentation https://nb-log-doc.readthedocs.io/zh_CN/latest/
+
+        Why set PyCharm terminal colors, explaining why  cannot determine the final color https://nb-log-doc.readthedocs.io/zh_CN/latest/articles/c1.html#c
+        [0m
+        
+ 2026-06-18 14:43:29  "D:\codes\lc-agent\lc_agent\app.py:186" -[print]-run- 
+  lc_agent v0.1.0
+ 2026-06-18 14:43:29  "D:\codes\lc-agent\lc_agent\app.py:187" -[print]-run-   Web UI: http://127.0.0.1:8001
+ 2026-06-18 14:43:29  "D:\codes\lc-agent\lc_agent\app.py:188" -[print]-run-   API Docs: http://127.0.0.1:8001/api/docs
+
+ 2026-06-18 14:43:29  "D:\codes\lc-agent\lc_agent\app.py:152" -[print]-_load_presets_from_db- [Agents] Loaded 3 user presets from database
+ 2026-06-18 14:43:52  "D:\codes\lc-agent\lc_agent\app.py:65" -[print]-_connect_mcp_background- [MCP] Connected: ['filesystem', 'nbrag', 'context7', 'serena', 'docs-langchain', 'reference-langchain']
+ 2026-06-18 14:46:07  "D:\codes\lc-agent\lc_agent\server\websocket.py:193" -[print]-_generate_and_push_title- [WS] Title generation failed: Unexpected ASGI message 'websocket.send', after sending 'websocket.close' or response already completed.
+ 2026-06-18 14:57:24  "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\nb_log\__init__.py:53" -[print]-<module>- [0m
+    
+    .__   __. .______           __        ______     _______ 
+    |  \ |  | |   _  \         |  |      /  __  \   /  _____|
+    |   \|  | |  |_)  |  ______|  |     |  |  |  | |  |  __  
+    |  . `  | |   _  <  |______|  |     |  |  |  | |  | |_ | 
+    |  |\   | |  |_)  |        |  `----.|  `--'  | |  |__| | 
+    |__| \__| |______/         |_______| \______/   \______|      
+    
+         [0m
+ 2026-06-18 14:57:24  "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\nb_log\__init__.py:82" -[print]-<module>- [0m
+        1)When using PyCharm, it is strongly recommended to re-customize the theme colors in PyCharm's console as follows, otherwise the color display may be harsh on the eyes. The colors specified in the code are just approximate red, yellow, blue, and green. The display effect varies across different IDE software, themes, and fonts, so users need to set them up themselves.
+        The setup method is: Open PyCharm -> File -> Settings -> Editor -> Color Scheme -> Console Colors, select monokai, click to expand ANSI colors,
+        and re-modify 7 custom colors: set Blue to 0454F3, Cyan to 06F0F6, Green to 13FC02, Magenta to ff1cd5, red to F80606, yellow to EAFA04, gray to FFFFFF, and white to FFFFFF.
+        Different versions of PyCharm, themes, or IDEs can be set according to the actual console display.
+
+        2)When using tools like xshell or finashell to connect to Linux, you can also customize the theme colors, or use the default colors of the shell connection tool.
+
+        Color effect as shown at https://ibb.co/qRssXTr
+
+        You can modify the default logging behavior when the get_logger method is called without parameters in nb_log_config.py at the root directory of the current project.
+
+        nb_log documentation https://nb-log-doc.readthedocs.io/zh_CN/latest/
+
+        Why set PyCharm terminal colors, explaining why  cannot determine the final color https://nb-log-doc.readthedocs.io/zh_CN/latest/articles/c1.html#c
+        [0m
+        
+ 2026-06-18 14:57:44  "D:\codes\lc-agent\lc_agent\app.py:186" -[print]-run- 
+  lc_agent v0.1.0
+ 2026-06-18 14:57:44  "D:\codes\lc-agent\lc_agent\app.py:187" -[print]-run-   Web UI: http://127.0.0.1:8001
+ 2026-06-18 14:57:44  "D:\codes\lc-agent\lc_agent\app.py:188" -[print]-run-   API Docs: http://127.0.0.1:8001/api/docs
+
+ 2026-06-18 14:57:45  "D:\codes\lc-agent\lc_agent\app.py:152" -[print]-_load_presets_from_db- [Agents] Loaded 3 user presets from database
+ 2026-06-18 14:58:09  "D:\codes\lc-agent\lc_agent\app.py:65" -[print]-_connect_mcp_background- [MCP] Connected: ['filesystem', 'nbrag', 'context7', 'serena', 'docs-langchain', 'reference-langchain']
+ 2026-06-18 15:07:53  "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\nb_log\__init__.py:53" -[print]-<module>- [0m
+    
+    .__   __. .______           __        ______     _______ 
+    |  \ |  | |   _  \         |  |      /  __  \   /  _____|
+    |   \|  | |  |_)  |  ______|  |     |  |  |  | |  |  __  
+    |  . `  | |   _  <  |______|  |     |  |  |  | |  | |_ | 
+    |  |\   | |  |_)  |        |  `----.|  `--'  | |  |__| | 
+    |__| \__| |______/         |_______| \______/   \______|      
+    
+         [0m
+ 2026-06-18 15:07:53  "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\nb_log\__init__.py:82" -[print]-<module>- [0m
+        1)When using PyCharm, it is strongly recommended to re-customize the theme colors in PyCharm's console as follows, otherwise the color display may be harsh on the eyes. The colors specified in the code are just approximate red, yellow, blue, and green. The display effect varies across different IDE software, themes, and fonts, so users need to set them up themselves.
+        The setup method is: Open PyCharm -> File -> Settings -> Editor -> Color Scheme -> Console Colors, select monokai, click to expand ANSI colors,
+        and re-modify 7 custom colors: set Blue to 0454F3, Cyan to 06F0F6, Green to 13FC02, Magenta to ff1cd5, red to F80606, yellow to EAFA04, gray to FFFFFF, and white to FFFFFF.
+        Different versions of PyCharm, themes, or IDEs can be set according to the actual console display.
+
+        2)When using tools like xshell or finashell to connect to Linux, you can also customize the theme colors, or use the default colors of the shell connection tool.
+
+        Color effect as shown at https://ibb.co/qRssXTr
+
+        You can modify the default logging behavior when the get_logger method is called without parameters in nb_log_config.py at the root directory of the current project.
+
+        nb_log documentation https://nb-log-doc.readthedocs.io/zh_CN/latest/
+
+        Why set PyCharm terminal colors, explaining why  cannot determine the final color https://nb-log-doc.readthedocs.io/zh_CN/latest/articles/c1.html#c
+        [0m
+        
+ 2026-06-18 15:08:14  "D:\codes\lc-agent\lc_agent\app.py:186" -[print]-run- 
+  lc_agent v0.1.0
+ 2026-06-18 15:08:14  "D:\codes\lc-agent\lc_agent\app.py:187" -[print]-run-   Web UI: http://127.0.0.1:8001
+ 2026-06-18 15:08:14  "D:\codes\lc-agent\lc_agent\app.py:188" -[print]-run-   API Docs: http://127.0.0.1:8001/api/docs
+
+ 2026-06-18 15:08:14  "D:\codes\lc-agent\lc_agent\app.py:152" -[print]-_load_presets_from_db- [Agents] Loaded 3 user presets from database
+ 2026-06-18 15:08:36  "D:\codes\lc-agent\lc_agent\app.py:65" -[print]-_connect_mcp_background- [MCP] Connected: ['filesystem', 'nbrag', 'context7', 'serena', 'docs-langchain', 'reference-langchain']
+ 2026-06-18 15:10:14  "D:\codes\lc-agent\lc_agent\server\websocket.py:193" -[print]-_generate_and_push_title- [WS] Title generation failed: Unexpected ASGI message 'websocket.send', after sending 'websocket.close' or response already completed.
+ 2026-06-18 15:15:46  "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\nb_log\__init__.py:53" -[print]-<module>- [0m
+    
+    .__   __. .______           __        ______     _______ 
+    |  \ |  | |   _  \         |  |      /  __  \   /  _____|
+    |   \|  | |  |_)  |  ______|  |     |  |  |  | |  |  __  
+    |  . `  | |   _  <  |______|  |     |  |  |  | |  | |_ | 
+    |  |\   | |  |_)  |        |  `----.|  `--'  | |  |__| | 
+    |__| \__| |______/         |_______| \______/   \______|      
+    
+         [0m
+ 2026-06-18 15:15:46  "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\nb_log\__init__.py:82" -[print]-<module>- [0m
+        1)When using PyCharm, it is strongly recommended to re-customize the theme colors in PyCharm's console as follows, otherwise the color display may be harsh on the eyes. The colors specified in the code are just approximate red, yellow, blue, and green. The display effect varies across different IDE software, themes, and fonts, so users need to set them up themselves.
+        The setup method is: Open PyCharm -> File -> Settings -> Editor -> Color Scheme -> Console Colors, select monokai, click to expand ANSI colors,
+        and re-modify 7 custom colors: set Blue to 0454F3, Cyan to 06F0F6, Green to 13FC02, Magenta to ff1cd5, red to F80606, yellow to EAFA04, gray to FFFFFF, and white to FFFFFF.
+        Different versions of PyCharm, themes, or IDEs can be set according to the actual console display.
+
+        2)When using tools like xshell or finashell to connect to Linux, you can also customize the theme colors, or use the default colors of the shell connection tool.
+
+        Color effect as shown at https://ibb.co/qRssXTr
+
+        You can modify the default logging behavior when the get_logger method is called without parameters in nb_log_config.py at the root directory of the current project.
+
+        nb_log documentation https://nb-log-doc.readthedocs.io/zh_CN/latest/
+
+        Why set PyCharm terminal colors, explaining why  cannot determine the final color https://nb-log-doc.readthedocs.io/zh_CN/latest/articles/c1.html#c
+        [0m
+        
+ 2026-06-18 15:16:05  "D:\codes\lc-agent\lc_agent\app.py:186" -[print]-run- 
+  lc_agent v0.1.0
+ 2026-06-18 15:16:05  "D:\codes\lc-agent\lc_agent\app.py:187" -[print]-run-   Web UI: http://127.0.0.1:8001
+ 2026-06-18 15:16:05  "D:\codes\lc-agent\lc_agent\app.py:188" -[print]-run-   API Docs: http://127.0.0.1:8001/api/docs
+
+ 2026-06-18 15:16:06  "D:\codes\lc-agent\lc_agent\app.py:152" -[print]-_load_presets_from_db- [Agents] Loaded 3 user presets from database
+ 2026-06-18 15:16:27  "D:\codes\lc-agent\lc_agent\app.py:65" -[print]-_connect_mcp_background- [MCP] Connected: ['filesystem', 'nbrag', 'context7', 'serena', 'docs-langchain', 'reference-langchain']
+ 2026-06-18 15:17:45  "D:\codes\lc-agent\lc_agent\server\websocket.py:193" -[print]-_generate_and_push_title- [WS] Title generation failed: Unexpected ASGI message 'websocket.send', after sending 'websocket.close' or response already completed.
+ 2026-06-18 15:25:05  "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\nb_log\__init__.py:53" -[print]-<module>- [0m
+    
+    .__   __. .______           __        ______     _______ 
+    |  \ |  | |   _  \         |  |      /  __  \   /  _____|
+    |   \|  | |  |_)  |  ______|  |     |  |  |  | |  |  __  
+    |  . `  | |   _  <  |______|  |     |  |  |  | |  | |_ | 
+    |  |\   | |  |_)  |        |  `----.|  `--'  | |  |__| | 
+    |__| \__| |______/         |_______| \______/   \______|      
+    
+         [0m
+ 2026-06-18 15:25:05  "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\nb_log\__init__.py:82" -[print]-<module>- [0m
+        1)When using PyCharm, it is strongly recommended to re-customize the theme colors in PyCharm's console as follows, otherwise the color display may be harsh on the eyes. The colors specified in the code are just approximate red, yellow, blue, and green. The display effect varies across different IDE software, themes, and fonts, so users need to set them up themselves.
+        The setup method is: Open PyCharm -> File -> Settings -> Editor -> Color Scheme -> Console Colors, select monokai, click to expand ANSI colors,
+        and re-modify 7 custom colors: set Blue to 0454F3, Cyan to 06F0F6, Green to 13FC02, Magenta to ff1cd5, red to F80606, yellow to EAFA04, gray to FFFFFF, and white to FFFFFF.
+        Different versions of PyCharm, themes, or IDEs can be set according to the actual console display.
+
+        2)When using tools like xshell or finashell to connect to Linux, you can also customize the theme colors, or use the default colors of the shell connection tool.
+
+        Color effect as shown at https://ibb.co/qRssXTr
+
+        You can modify the default logging behavior when the get_logger method is called without parameters in nb_log_config.py at the root directory of the current project.
+
+        nb_log documentation https://nb-log-doc.readthedocs.io/zh_CN/latest/
+
+        Why set PyCharm terminal colors, explaining why  cannot determine the final color https://nb-log-doc.readthedocs.io/zh_CN/latest/articles/c1.html#c
+        [0m
+        
+ 2026-06-18 15:25:27  "D:\codes\lc-agent\lc_agent\app.py:186" -[print]-run- 
+  lc_agent v0.1.0
+ 2026-06-18 15:25:27  "D:\codes\lc-agent\lc_agent\app.py:187" -[print]-run-   Web UI: http://127.0.0.1:8001
+ 2026-06-18 15:25:27  "D:\codes\lc-agent\lc_agent\app.py:188" -[print]-run-   API Docs: http://127.0.0.1:8001/api/docs
+
+ 2026-06-18 15:25:27  "D:\codes\lc-agent\lc_agent\app.py:152" -[print]-_load_presets_from_db- [Agents] Loaded 3 user presets from database
+ 2026-06-18 15:25:54  "D:\codes\lc-agent\lc_agent\app.py:65" -[print]-_connect_mcp_background- [MCP] Connected: ['filesystem', 'nbrag', 'context7', 'serena', 'docs-langchain', 'reference-langchain']
+ 2026-06-18 15:32:56  "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\nb_log\__init__.py:53" -[print]-<module>- [0m
+    
+    .__   __. .______           __        ______     _______ 
+    |  \ |  | |   _  \         |  |      /  __  \   /  _____|
+    |   \|  | |  |_)  |  ______|  |     |  |  |  | |  |  __  
+    |  . `  | |   _  <  |______|  |     |  |  |  | |  | |_ | 
+    |  |\   | |  |_)  |        |  `----.|  `--'  | |  |__| | 
+    |__| \__| |______/         |_______| \______/   \______|      
+    
+         [0m
+ 2026-06-18 15:32:56  "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\nb_log\__init__.py:82" -[print]-<module>- [0m
+        1)When using PyCharm, it is strongly recommended to re-customize the theme colors in PyCharm's console as follows, otherwise the color display may be harsh on the eyes. The colors specified in the code are just approximate red, yellow, blue, and green. The display effect varies across different IDE software, themes, and fonts, so users need to set them up themselves.
+        The setup method is: Open PyCharm -> File -> Settings -> Editor -> Color Scheme -> Console Colors, select monokai, click to expand ANSI colors,
+        and re-modify 7 custom colors: set Blue to 0454F3, Cyan to 06F0F6, Green to 13FC02, Magenta to ff1cd5, red to F80606, yellow to EAFA04, gray to FFFFFF, and white to FFFFFF.
+        Different versions of PyCharm, themes, or IDEs can be set according to the actual console display.
+
+        2)When using tools like xshell or finashell to connect to Linux, you can also customize the theme colors, or use the default colors of the shell connection tool.
+
+        Color effect as shown at https://ibb.co/qRssXTr
+
+        You can modify the default logging behavior when the get_logger method is called without parameters in nb_log_config.py at the root directory of the current project.
+
+        nb_log documentation https://nb-log-doc.readthedocs.io/zh_CN/latest/
+
+        Why set PyCharm terminal colors, explaining why  cannot determine the final color https://nb-log-doc.readthedocs.io/zh_CN/latest/articles/c1.html#c
+        [0m
+        
+ 2026-06-18 15:33:18  "D:\codes\lc-agent\lc_agent\app.py:186" -[print]-run- 
+  lc_agent v0.1.0
+ 2026-06-18 15:33:18  "D:\codes\lc-agent\lc_agent\app.py:187" -[print]-run-   Web UI: http://127.0.0.1:8001
+ 2026-06-18 15:33:18  "D:\codes\lc-agent\lc_agent\app.py:188" -[print]-run-   API Docs: http://127.0.0.1:8001/api/docs
+
+ 2026-06-18 15:33:18  "D:\codes\lc-agent\lc_agent\app.py:152" -[print]-_load_presets_from_db- [Agents] Loaded 3 user presets from database
+ 2026-06-18 15:33:44  "D:\codes\lc-agent\lc_agent\app.py:65" -[print]-_connect_mcp_background- [MCP] Connected: ['filesystem', 'nbrag', 'context7', 'serena', 'docs-langchain', 'reference-langchain']
+ 2026-06-18 17:13:07  "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\nb_log\__init__.py:53" -[print]-<module>- [0m
+    
+    .__   __. .______           __        ______     _______ 
+    |  \ |  | |   _  \         |  |      /  __  \   /  _____|
+    |   \|  | |  |_)  |  ______|  |     |  |  |  | |  |  __  
+    |  . `  | |   _  <  |______|  |     |  |  |  | |  | |_ | 
+    |  |\   | |  |_)  |        |  `----.|  `--'  | |  |__| | 
+    |__| \__| |______/         |_______| \______/   \______|      
+    
+         [0m
+ 2026-06-18 17:13:07  "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\nb_log\__init__.py:82" -[print]-<module>- [0m
+        1)When using PyCharm, it is strongly recommended to re-customize the theme colors in PyCharm's console as follows, otherwise the color display may be harsh on the eyes. The colors specified in the code are just approximate red, yellow, blue, and green. The display effect varies across different IDE software, themes, and fonts, so users need to set them up themselves.
+        The setup method is: Open PyCharm -> File -> Settings -> Editor -> Color Scheme -> Console Colors, select monokai, click to expand ANSI colors,
+        and re-modify 7 custom colors: set Blue to 0454F3, Cyan to 06F0F6, Green to 13FC02, Magenta to ff1cd5, red to F80606, yellow to EAFA04, gray to FFFFFF, and white to FFFFFF.
+        Different versions of PyCharm, themes, or IDEs can be set according to the actual console display.
+
+        2)When using tools like xshell or finashell to connect to Linux, you can also customize the theme colors, or use the default colors of the shell connection tool.
+
+        Color effect as shown at https://ibb.co/qRssXTr
+
+        You can modify the default logging behavior when the get_logger method is called without parameters in nb_log_config.py at the root directory of the current project.
+
+        nb_log documentation https://nb-log-doc.readthedocs.io/zh_CN/latest/
+
+        Why set PyCharm terminal colors, explaining why  cannot determine the final color https://nb-log-doc.readthedocs.io/zh_CN/latest/articles/c1.html#c
+        [0m
+        
+ 2026-06-18 17:13:23  "D:\codes\lc-agent\lc_agent\app.py:186" -[print]-run- 
+  lc_agent v0.1.0
+ 2026-06-18 17:13:23  "D:\codes\lc-agent\lc_agent\app.py:187" -[print]-run-   Web UI: http://127.0.0.1:8001
+ 2026-06-18 17:13:23  "D:\codes\lc-agent\lc_agent\app.py:188" -[print]-run-   API Docs: http://127.0.0.1:8001/api/docs
+
+ 2026-06-18 17:13:23  "D:\codes\lc-agent\lc_agent\app.py:152" -[print]-_load_presets_from_db- [Agents] Loaded 3 user presets from database
+ 2026-06-18 17:13:45  "D:\codes\lc-agent\lc_agent\app.py:65" -[print]-_connect_mcp_background- [MCP] Connected: ['filesystem', 'nbrag', 'context7', 'serena', 'docs-langchain', 'reference-langchain']
+ 2026-06-18 17:50:36  "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\nb_log\__init__.py:53" -[print]-<module>- [0m
+    
+    .__   __. .______           __        ______     _______ 
+    |  \ |  | |   _  \         |  |      /  __  \   /  _____|
+    |   \|  | |  |_)  |  ______|  |     |  |  |  | |  |  __  
+    |  . `  | |   _  <  |______|  |     |  |  |  | |  | |_ | 
+    |  |\   | |  |_)  |        |  `----.|  `--'  | |  |__| | 
+    |__| \__| |______/         |_______| \______/   \______|      
+    
+         [0m
+ 2026-06-18 17:50:36  "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\nb_log\__init__.py:82" -[print]-<module>- [0m
+        1)When using PyCharm, it is strongly recommended to re-customize the theme colors in PyCharm's console as follows, otherwise the color display may be harsh on the eyes. The colors specified in the code are just approximate red, yellow, blue, and green. The display effect varies across different IDE software, themes, and fonts, so users need to set them up themselves.
+        The setup method is: Open PyCharm -> File -> Settings -> Editor -> Color Scheme -> Console Colors, select monokai, click to expand ANSI colors,
+        and re-modify 7 custom colors: set Blue to 0454F3, Cyan to 06F0F6, Green to 13FC02, Magenta to ff1cd5, red to F80606, yellow to EAFA04, gray to FFFFFF, and white to FFFFFF.
+        Different versions of PyCharm, themes, or IDEs can be set according to the actual console display.
+
+        2)When using tools like xshell or finashell to connect to Linux, you can also customize the theme colors, or use the default colors of the shell connection tool.
+
+        Color effect as shown at https://ibb.co/qRssXTr
+
+        You can modify the default logging behavior when the get_logger method is called without parameters in nb_log_config.py at the root directory of the current project.
+
+        nb_log documentation https://nb-log-doc.readthedocs.io/zh_CN/latest/
+
+        Why set PyCharm terminal colors, explaining why  cannot determine the final color https://nb-log-doc.readthedocs.io/zh_CN/latest/articles/c1.html#c
+        [0m
+        
+ 2026-06-18 17:50:56  "D:\codes\lc-agent\lc_agent\app.py:186" -[print]-run- 
+  lc_agent v0.1.0
+ 2026-06-18 17:50:56  "D:\codes\lc-agent\lc_agent\app.py:187" -[print]-run-   Web UI: http://127.0.0.1:8001
+ 2026-06-18 17:50:56  "D:\codes\lc-agent\lc_agent\app.py:188" -[print]-run-   API Docs: http://127.0.0.1:8001/api/docs
+
+ 2026-06-18 17:50:56  "D:\codes\lc-agent\lc_agent\app.py:152" -[print]-_load_presets_from_db- [Agents] Loaded 3 user presets from database
+ 2026-06-18 17:51:18  "D:\codes\lc-agent\lc_agent\app.py:65" -[print]-_connect_mcp_background- [MCP] Connected: ['filesystem', 'nbrag', 'context7', 'serena', 'docs-langchain', 'reference-langchain']
+ 2026-06-18 18:08:13  "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\nb_log\__init__.py:53" -[print]-<module>- [0m
+    
+    .__   __. .______           __        ______     _______ 
+    |  \ |  | |   _  \         |  |      /  __  \   /  _____|
+    |   \|  | |  |_)  |  ______|  |     |  |  |  | |  |  __  
+    |  . `  | |   _  <  |______|  |     |  |  |  | |  | |_ | 
+    |  |\   | |  |_)  |        |  `----.|  `--'  | |  |__| | 
+    |__| \__| |______/         |_______| \______/   \______|      
+    
+         [0m
+ 2026-06-18 18:08:13  "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\nb_log\__init__.py:82" -[print]-<module>- [0m
+        1)When using PyCharm, it is strongly recommended to re-customize the theme colors in PyCharm's console as follows, otherwise the color display may be harsh on the eyes. The colors specified in the code are just approximate red, yellow, blue, and green. The display effect varies across different IDE software, themes, and fonts, so users need to set them up themselves.
+        The setup method is: Open PyCharm -> File -> Settings -> Editor -> Color Scheme -> Console Colors, select monokai, click to expand ANSI colors,
+        and re-modify 7 custom colors: set Blue to 0454F3, Cyan to 06F0F6, Green to 13FC02, Magenta to ff1cd5, red to F80606, yellow to EAFA04, gray to FFFFFF, and white to FFFFFF.
+        Different versions of PyCharm, themes, or IDEs can be set according to the actual console display.
+
+        2)When using tools like xshell or finashell to connect to Linux, you can also customize the theme colors, or use the default colors of the shell connection tool.
+
+        Color effect as shown at https://ibb.co/qRssXTr
+
+        You can modify the default logging behavior when the get_logger method is called without parameters in nb_log_config.py at the root directory of the current project.
+
+        nb_log documentation https://nb-log-doc.readthedocs.io/zh_CN/latest/
+
+        Why set PyCharm terminal colors, explaining why  cannot determine the final color https://nb-log-doc.readthedocs.io/zh_CN/latest/articles/c1.html#c
+        [0m
+        
+ 2026-06-18 18:08:32  "D:\codes\lc-agent\lc_agent\app.py:186" -[print]-run- 
+  lc_agent v0.1.0
+ 2026-06-18 18:08:32  "D:\codes\lc-agent\lc_agent\app.py:187" -[print]-run-   Web UI: http://127.0.0.1:8001
+ 2026-06-18 18:08:32  "D:\codes\lc-agent\lc_agent\app.py:188" -[print]-run-   API Docs: http://127.0.0.1:8001/api/docs
+
+ 2026-06-18 18:08:32  "D:\codes\lc-agent\lc_agent\app.py:152" -[print]-_load_presets_from_db- [Agents] Loaded 3 user presets from database
+ 2026-06-18 18:08:54  "D:\codes\lc-agent\lc_agent\app.py:65" -[print]-_connect_mcp_background- [MCP] Connected: ['filesystem', 'nbrag', 'context7', 'serena', 'docs-langchain', 'reference-langchain']
+ 2026-06-18 19:18:50  "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\nb_log\__init__.py:53" -[print]-<module>- [0m
+    
+    .__   __. .______           __        ______     _______ 
+    |  \ |  | |   _  \         |  |      /  __  \   /  _____|
+    |   \|  | |  |_)  |  ______|  |     |  |  |  | |  |  __  
+    |  . `  | |   _  <  |______|  |     |  |  |  | |  | |_ | 
+    |  |\   | |  |_)  |        |  `----.|  `--'  | |  |__| | 
+    |__| \__| |______/         |_______| \______/   \______|      
+    
+         [0m
+ 2026-06-18 19:18:50  "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\nb_log\__init__.py:82" -[print]-<module>- [0m
+        1)When using PyCharm, it is strongly recommended to re-customize the theme colors in PyCharm's console as follows, otherwise the color display may be harsh on the eyes. The colors specified in the code are just approximate red, yellow, blue, and green. The display effect varies across different IDE software, themes, and fonts, so users need to set them up themselves.
+        The setup method is: Open PyCharm -> File -> Settings -> Editor -> Color Scheme -> Console Colors, select monokai, click to expand ANSI colors,
+        and re-modify 7 custom colors: set Blue to 0454F3, Cyan to 06F0F6, Green to 13FC02, Magenta to ff1cd5, red to F80606, yellow to EAFA04, gray to FFFFFF, and white to FFFFFF.
+        Different versions of PyCharm, themes, or IDEs can be set according to the actual console display.
+
+        2)When using tools like xshell or finashell to connect to Linux, you can also customize the theme colors, or use the default colors of the shell connection tool.
+
+        Color effect as shown at https://ibb.co/qRssXTr
+
+        You can modify the default logging behavior when the get_logger method is called without parameters in nb_log_config.py at the root directory of the current project.
+
+        nb_log documentation https://nb-log-doc.readthedocs.io/zh_CN/latest/
+
+        Why set PyCharm terminal colors, explaining why  cannot determine the final color https://nb-log-doc.readthedocs.io/zh_CN/latest/articles/c1.html#c
+        [0m
+        
+ 2026-06-18 19:19:07  "D:\codes\lc-agent\lc_agent\app.py:186" -[print]-run- 
+  lc_agent v0.1.0
+ 2026-06-18 19:19:07  "D:\codes\lc-agent\lc_agent\app.py:187" -[print]-run-   Web UI: http://127.0.0.1:8001
+ 2026-06-18 19:19:07  "D:\codes\lc-agent\lc_agent\app.py:188" -[print]-run-   API Docs: http://127.0.0.1:8001/api/docs
+
+ 2026-06-18 19:19:07  "D:\codes\lc-agent\lc_agent\app.py:152" -[print]-_load_presets_from_db- [Agents] Loaded 3 user presets from database
+ 2026-06-18 19:19:29  "D:\codes\lc-agent\lc_agent\app.py:65" -[print]-_connect_mcp_background- [MCP] Connected: ['filesystem', 'nbrag', 'context7', 'serena', 'docs-langchain', 'reference-langchain']
+ 2026-06-18 19:21:38  "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\nb_log\__init__.py:53" -[print]-<module>- [0m
+    
+    .__   __. .______           __        ______     _______ 
+    |  \ |  | |   _  \         |  |      /  __  \   /  _____|
+    |   \|  | |  |_)  |  ______|  |     |  |  |  | |  |  __  
+    |  . `  | |   _  <  |______|  |     |  |  |  | |  | |_ | 
+    |  |\   | |  |_)  |        |  `----.|  `--'  | |  |__| | 
+    |__| \__| |______/         |_______| \______/   \______|      
+    
+         [0m
+ 2026-06-18 19:21:38  "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\nb_log\__init__.py:82" -[print]-<module>- [0m
+        1)When using PyCharm, it is strongly recommended to re-customize the theme colors in PyCharm's console as follows, otherwise the color display may be harsh on the eyes. The colors specified in the code are just approximate red, yellow, blue, and green. The display effect varies across different IDE software, themes, and fonts, so users need to set them up themselves.
+        The setup method is: Open PyCharm -> File -> Settings -> Editor -> Color Scheme -> Console Colors, select monokai, click to expand ANSI colors,
+        and re-modify 7 custom colors: set Blue to 0454F3, Cyan to 06F0F6, Green to 13FC02, Magenta to ff1cd5, red to F80606, yellow to EAFA04, gray to FFFFFF, and white to FFFFFF.
+        Different versions of PyCharm, themes, or IDEs can be set according to the actual console display.
+
+        2)When using tools like xshell or finashell to connect to Linux, you can also customize the theme colors, or use the default colors of the shell connection tool.
+
+        Color effect as shown at https://ibb.co/qRssXTr
+
+        You can modify the default logging behavior when the get_logger method is called without parameters in nb_log_config.py at the root directory of the current project.
+
+        nb_log documentation https://nb-log-doc.readthedocs.io/zh_CN/latest/
+
+        Why set PyCharm terminal colors, explaining why  cannot determine the final color https://nb-log-doc.readthedocs.io/zh_CN/latest/articles/c1.html#c
+        [0m
+        
+ 2026-06-18 19:21:53  "D:\codes\lc-agent\lc_agent\app.py:186" -[print]-run- 
+  lc_agent v0.1.0
+ 2026-06-18 19:21:53  "D:\codes\lc-agent\lc_agent\app.py:187" -[print]-run-   Web UI: http://127.0.0.1:8001
+ 2026-06-18 19:21:53  "D:\codes\lc-agent\lc_agent\app.py:188" -[print]-run-   API Docs: http://127.0.0.1:8001/api/docs
+
+ 2026-06-18 19:21:53  "D:\codes\lc-agent\lc_agent\app.py:152" -[print]-_load_presets_from_db- [Agents] Loaded 3 user presets from database
+ 2026-06-18 19:22:13  "D:\codes\lc-agent\lc_agent\app.py:65" -[print]-_connect_mcp_background- [MCP] Connected: ['filesystem', 'nbrag', 'context7', 'serena', 'docs-langchain', 'reference-langchain']
+ 2026-06-18 19:28:01  "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\nb_log\__init__.py:53" -[print]-<module>- [0m
+    
+    .__   __. .______           __        ______     _______ 
+    |  \ |  | |   _  \         |  |      /  __  \   /  _____|
+    |   \|  | |  |_)  |  ______|  |     |  |  |  | |  |  __  
+    |  . `  | |   _  <  |______|  |     |  |  |  | |  | |_ | 
+    |  |\   | |  |_)  |        |  `----.|  `--'  | |  |__| | 
+    |__| \__| |______/         |_______| \______/   \______|      
+    
+         [0m
+ 2026-06-18 19:28:01  "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\nb_log\__init__.py:82" -[print]-<module>- [0m
+        1)When using PyCharm, it is strongly recommended to re-customize the theme colors in PyCharm's console as follows, otherwise the color display may be harsh on the eyes. The colors specified in the code are just approximate red, yellow, blue, and green. The display effect varies across different IDE software, themes, and fonts, so users need to set them up themselves.
+        The setup method is: Open PyCharm -> File -> Settings -> Editor -> Color Scheme -> Console Colors, select monokai, click to expand ANSI colors,
+        and re-modify 7 custom colors: set Blue to 0454F3, Cyan to 06F0F6, Green to 13FC02, Magenta to ff1cd5, red to F80606, yellow to EAFA04, gray to FFFFFF, and white to FFFFFF.
+        Different versions of PyCharm, themes, or IDEs can be set according to the actual console display.
+
+        2)When using tools like xshell or finashell to connect to Linux, you can also customize the theme colors, or use the default colors of the shell connection tool.
+
+        Color effect as shown at https://ibb.co/qRssXTr
+
+        You can modify the default logging behavior when the get_logger method is called without parameters in nb_log_config.py at the root directory of the current project.
+
+        nb_log documentation https://nb-log-doc.readthedocs.io/zh_CN/latest/
+
+        Why set PyCharm terminal colors, explaining why  cannot determine the final color https://nb-log-doc.readthedocs.io/zh_CN/latest/articles/c1.html#c
+        [0m
+        
+ 2026-06-18 19:28:16  "D:\codes\lc-agent\lc_agent\app.py:186" -[print]-run- 
+  lc_agent v0.1.0
+ 2026-06-18 19:28:16  "D:\codes\lc-agent\lc_agent\app.py:187" -[print]-run-   Web UI: http://127.0.0.1:8001
+ 2026-06-18 19:28:16  "D:\codes\lc-agent\lc_agent\app.py:188" -[print]-run-   API Docs: http://127.0.0.1:8001/api/docs
+
+ 2026-06-18 19:28:17  "D:\codes\lc-agent\lc_agent\app.py:152" -[print]-_load_presets_from_db- [Agents] Loaded 3 user presets from database
+ 2026-06-18 19:28:37  "D:\codes\lc-agent\lc_agent\app.py:65" -[print]-_connect_mcp_background- [MCP] Connected: ['filesystem', 'nbrag', 'context7', 'serena', 'docs-langchain', 'reference-langchain']
+ 2026-06-18 19:30:53  "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\nb_log\__init__.py:53" -[print]-<module>- [0m
+    
+    .__   __. .______           __        ______     _______ 
+    |  \ |  | |   _  \         |  |      /  __  \   /  _____|
+    |   \|  | |  |_)  |  ______|  |     |  |  |  | |  |  __  
+    |  . `  | |   _  <  |______|  |     |  |  |  | |  | |_ | 
+    |  |\   | |  |_)  |        |  `----.|  `--'  | |  |__| | 
+    |__| \__| |______/         |_______| \______/   \______|      
+    
+         [0m
+ 2026-06-18 19:30:53  "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\nb_log\__init__.py:82" -[print]-<module>- [0m
+        1)When using PyCharm, it is strongly recommended to re-customize the theme colors in PyCharm's console as follows, otherwise the color display may be harsh on the eyes. The colors specified in the code are just approximate red, yellow, blue, and green. The display effect varies across different IDE software, themes, and fonts, so users need to set them up themselves.
+        The setup method is: Open PyCharm -> File -> Settings -> Editor -> Color Scheme -> Console Colors, select monokai, click to expand ANSI colors,
+        and re-modify 7 custom colors: set Blue to 0454F3, Cyan to 06F0F6, Green to 13FC02, Magenta to ff1cd5, red to F80606, yellow to EAFA04, gray to FFFFFF, and white to FFFFFF.
+        Different versions of PyCharm, themes, or IDEs can be set according to the actual console display.
+
+        2)When using tools like xshell or finashell to connect to Linux, you can also customize the theme colors, or use the default colors of the shell connection tool.
+
+        Color effect as shown at https://ibb.co/qRssXTr
+
+        You can modify the default logging behavior when the get_logger method is called without parameters in nb_log_config.py at the root directory of the current project.
+
+        nb_log documentation https://nb-log-doc.readthedocs.io/zh_CN/latest/
+
+        Why set PyCharm terminal colors, explaining why  cannot determine the final color https://nb-log-doc.readthedocs.io/zh_CN/latest/articles/c1.html#c
+        [0m
+        
+ 2026-06-18 19:31:09  "D:\codes\lc-agent\lc_agent\app.py:186" -[print]-run- 
+  lc_agent v0.1.0
+ 2026-06-18 19:31:09  "D:\codes\lc-agent\lc_agent\app.py:187" -[print]-run-   Web UI: http://127.0.0.1:8001
+ 2026-06-18 19:31:09  "D:\codes\lc-agent\lc_agent\app.py:188" -[print]-run-   API Docs: http://127.0.0.1:8001/api/docs
+
+ 2026-06-18 19:31:09  "D:\codes\lc-agent\lc_agent\app.py:152" -[print]-_load_presets_from_db- [Agents] Loaded 3 user presets from database
+ 2026-06-18 19:31:31  "D:\codes\lc-agent\lc_agent\app.py:65" -[print]-_connect_mcp_background- [MCP] Connected: ['filesystem', 'nbrag', 'context7', 'serena', 'docs-langchain', 'reference-langchain']
+ 2026-06-18 20:22:33  "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\nb_log\__init__.py:53" -[print]-<module>- [0m
+    
+    .__   __. .______           __        ______     _______ 
+    |  \ |  | |   _  \         |  |      /  __  \   /  _____|
+    |   \|  | |  |_)  |  ______|  |     |  |  |  | |  |  __  
+    |  . `  | |   _  <  |______|  |     |  |  |  | |  | |_ | 
+    |  |\   | |  |_)  |        |  `----.|  `--'  | |  |__| | 
+    |__| \__| |______/         |_______| \______/   \______|      
+    
+         [0m
+ 2026-06-18 20:22:33  "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\nb_log\__init__.py:82" -[print]-<module>- [0m
+        1)When using PyCharm, it is strongly recommended to re-customize the theme colors in PyCharm's console as follows, otherwise the color display may be harsh on the eyes. The colors specified in the code are just approximate red, yellow, blue, and green. The display effect varies across different IDE software, themes, and fonts, so users need to set them up themselves.
+        The setup method is: Open PyCharm -> File -> Settings -> Editor -> Color Scheme -> Console Colors, select monokai, click to expand ANSI colors,
+        and re-modify 7 custom colors: set Blue to 0454F3, Cyan to 06F0F6, Green to 13FC02, Magenta to ff1cd5, red to F80606, yellow to EAFA04, gray to FFFFFF, and white to FFFFFF.
+        Different versions of PyCharm, themes, or IDEs can be set according to the actual console display.
+
+        2)When using tools like xshell or finashell to connect to Linux, you can also customize the theme colors, or use the default colors of the shell connection tool.
+
+        Color effect as shown at https://ibb.co/qRssXTr
+
+        You can modify the default logging behavior when the get_logger method is called without parameters in nb_log_config.py at the root directory of the current project.
+
+        nb_log documentation https://nb-log-doc.readthedocs.io/zh_CN/latest/
+
+        Why set PyCharm terminal colors, explaining why  cannot determine the final color https://nb-log-doc.readthedocs.io/zh_CN/latest/articles/c1.html#c
+        [0m
+        
+ 2026-06-18 20:22:52  "D:\codes\lc-agent\lc_agent\app.py:186" -[print]-run- 
+  lc_agent v0.1.0
+ 2026-06-18 20:22:52  "D:\codes\lc-agent\lc_agent\app.py:187" -[print]-run-   Web UI: http://127.0.0.1:8001
+ 2026-06-18 20:22:52  "D:\codes\lc-agent\lc_agent\app.py:188" -[print]-run-   API Docs: http://127.0.0.1:8001/api/docs
+
+ 2026-06-18 20:22:52  "D:\codes\lc-agent\lc_agent\app.py:152" -[print]-_load_presets_from_db- [Agents] Loaded 3 user presets from database
+ 2026-06-18 20:23:11  "D:\codes\lc-agent\lc_agent\app.py:65" -[print]-_connect_mcp_background- [MCP] Connected: ['filesystem', 'nbrag', 'context7', 'serena', 'docs-langchain', 'reference-langchain']
+ 2026-06-18 21:51:18  "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\nb_log\__init__.py:53" -[print]-<module>- [0m
+    
+    .__   __. .______           __        ______     _______ 
+    |  \ |  | |   _  \         |  |      /  __  \   /  _____|
+    |   \|  | |  |_)  |  ______|  |     |  |  |  | |  |  __  
+    |  . `  | |   _  <  |______|  |     |  |  |  | |  | |_ | 
+    |  |\   | |  |_)  |        |  `----.|  `--'  | |  |__| | 
+    |__| \__| |______/         |_______| \______/   \______|      
+    
+         [0m
+ 2026-06-18 21:51:18  "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\nb_log\__init__.py:82" -[print]-<module>- [0m
+        1)When using PyCharm, it is strongly recommended to re-customize the theme colors in PyCharm's console as follows, otherwise the color display may be harsh on the eyes. The colors specified in the code are just approximate red, yellow, blue, and green. The display effect varies across different IDE software, themes, and fonts, so users need to set them up themselves.
+        The setup method is: Open PyCharm -> File -> Settings -> Editor -> Color Scheme -> Console Colors, select monokai, click to expand ANSI colors,
+        and re-modify 7 custom colors: set Blue to 0454F3, Cyan to 06F0F6, Green to 13FC02, Magenta to ff1cd5, red to F80606, yellow to EAFA04, gray to FFFFFF, and white to FFFFFF.
+        Different versions of PyCharm, themes, or IDEs can be set according to the actual console display.
+
+        2)When using tools like xshell or finashell to connect to Linux, you can also customize the theme colors, or use the default colors of the shell connection tool.
+
+        Color effect as shown at https://ibb.co/qRssXTr
+
+        You can modify the default logging behavior when the get_logger method is called without parameters in nb_log_config.py at the root directory of the current project.
+
+        nb_log documentation https://nb-log-doc.readthedocs.io/zh_CN/latest/
+
+        Why set PyCharm terminal colors, explaining why  cannot determine the final color https://nb-log-doc.readthedocs.io/zh_CN/latest/articles/c1.html#c
+        [0m
+        
+ 2026-06-18 21:51:37  "D:\codes\lc-agent\lc_agent\app.py:186" -[print]-run- 
+  lc_agent v0.1.0
+ 2026-06-18 21:51:37  "D:\codes\lc-agent\lc_agent\app.py:187" -[print]-run-   Web UI: http://127.0.0.1:8001
+ 2026-06-18 21:51:37  "D:\codes\lc-agent\lc_agent\app.py:188" -[print]-run-   API Docs: http://127.0.0.1:8001/api/docs
+
+ 2026-06-18 21:51:38  "D:\codes\lc-agent\lc_agent\app.py:152" -[print]-_load_presets_from_db- [Agents] Loaded 3 user presets from database
+ 2026-06-18 21:51:58  "D:\codes\lc-agent\lc_agent\app.py:65" -[print]-_connect_mcp_background- [MCP] Connected: ['filesystem', 'nbrag', 'context7', 'serena', 'docs-langchain', 'reference-langchain']
+ 
