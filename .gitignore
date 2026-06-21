@@ -221,5 +221,5 @@ bfzs_checkpoints.db-shm
 bfzs_checkpoints.db-wal
 bfzs_checkpoints.db-*-checkpoint.bin
 bfzs_data.db
-
+pythonlogs/
 
