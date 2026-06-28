@@ -59,7 +59,7 @@
     "default_model": "ds-deepseek-v4-flash",
     "streaming": true,
     "summarization": {
-      "enabled": true,
+      "enabled": false,
       "model": "",
       "trigger": ["fraction", 0.85],
       "keep": ["fraction", 0.20]
@@ -104,9 +104,15 @@
     },
 
     // Serena 代码分析 MCP — 已修正路径
+    // "serena": {
+    //   "type": "local",
+    //   "command": ["C:/Users/ydf6/.local/bin/serena.exe", "start-mcp-server", "--project", "D:/codes/lc-agent"],
+    //   "enabled": true
+    // },
+
     "serena": {
-      "type": "local",
-      "command": ["C:/Users/ydf6/.local/bin/serena.exe", "start-mcp-server", "--project", "D:/codes/lc-agent"],
+      "type": "http",
+      "url": "http://localhost:9102/mcp",
       "enabled": true
     },
 
