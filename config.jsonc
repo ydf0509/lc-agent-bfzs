@@ -1,4 +1,10 @@
 {
+  // ----- UI -----
+  "ui": {
+      // 网页左上角显示的应用名称，默认 "lc_agent"
+      "app_name": "心有灵犀"
+  },
+
   // LLM 提供商配置
   "provider": {
     "litellm": {
@@ -6,45 +12,44 @@
       "base_url": "http://localhost:4000/v1",
       "models": [
         // === 阿里百炼 ===
-        // {"id": "ali-qwen3.6-plus", "context_limit": 200000},
-        // {"id": "ali-qwen3.6-flash", "context_limit": 200000},
-        // {"id": "ali-deepseek-v4-pro", "context_limit": 200000},
-        // {"id": "ali-deepseek-v4-flash", "context_limit": 200000},
-        // {"id": "ali-deepseek-v3.2", "context_limit": 200000},
-        // {"id": "ali-kimi-k2.6", "context_limit": 200000},
-        // {"id": "ali-kimi-k2.5", "context_limit": 200000},
-        // {"id": "ali-glm-5.1", "context_limit": 200000},
-        // {"id": "ali-glm-5", "context_limit": 200000},
-        // {"id": "ali-MiniMax-M2.5", "context_limit": 200000},
+        // {"id": "ali-qwen3.6-plus", "context_limit": 200000, "max_output_tokens": 65536},
+        // {"id": "ali-qwen3.6-flash", "context_limit": 200000, "max_output_tokens": 65536},
+        // {"id": "ali-deepseek-v4-pro", "context_limit": 200000, "max_output_tokens": 65536},
+        // {"id": "ali-deepseek-v4-flash", "context_limit": 200000, "max_output_tokens": 65536},
+        // {"id": "ali-deepseek-v3.2", "context_limit": 200000, "max_output_tokens": 65536},
+        // {"id": "ali-kimi-k2.6", "context_limit": 200000, "max_output_tokens": 65536},
+        // {"id": "ali-kimi-k2.5", "context_limit": 200000, "max_output_tokens": 65536},
+        // {"id": "ali-glm-5.1", "context_limit": 200000, "max_output_tokens": 65536},
+        // {"id": "ali-glm-5", "context_limit": 200000, "max_output_tokens": 65536},
+        // {"id": "ali-MiniMax-M2.5", "context_limit": 200000, "max_output_tokens": 65536},
         // === DeepSeek 官方 ===
-        {"id": "ark-deepseek-v4-flash", "context_limit": 200000},
-        {"id": "zzz-gpt-5.4", "context_limit": 400000},
-        {"id": "zzz-gpt-5.5", "context_limit": 400000},
+        {"id": "ark-deepseek-v4-flash", "context_limit": 200000, "max_output_tokens": 65536},
+        {"id": "zzz-gpt-5.4", "context_limit": 400000, "max_output_tokens": 65536},
+        {"id": "zzz-gpt-5.5", "context_limit": 400000, "max_output_tokens": 65536},
 
+        {"id": "zzz-auto-gpt-5.4", "context_limit": 400000, "max_output_tokens": 65536},
+        {"id": "zzz-auto-gpt-5.5", "context_limit": 400000, "max_output_tokens": 65536},
 
-         {"id": "zzz-auto-gpt-5.4", "context_limit": 400000},
-        {"id": "zzz-auto-gpt-5.5", "context_limit": 400000},
+        {"id": "zzz-fallback-gpt-5.4", "context_limit": 400000, "max_output_tokens": 65536},
+        {"id": "zzz-fallback-gpt-5.5", "context_limit": 400000, "max_output_tokens": 65536},
 
-         {"id": "zzz-fallback-gpt-5.4", "context_limit": 400000},
-        {"id": "zzz-fallback-gpt-5.5", "context_limit": 400000},
-
-        {"id": "ds-deepseek-v4-pro", "context_limit": 200000},
-        {"id": "ds-deepseek-v4-flash", "context_limit": 200000},
+        {"id": "ds-deepseek-v4-pro", "context_limit": 200000, "max_output_tokens": 65536},
+        {"id": "ds-deepseek-v4-flash", "context_limit": 200000, "max_output_tokens": 65536},
         // === 字节方舟 Coding Plan ===
-        {"id": "ark-code-latest", "context_limit": 200000},
-        {"id": "ark-doubao-seed-code", "context_limit": 200000},
-        {"id": "ark-deepseek-v3.2", "context_limit": 200000},
-        {"id": "ark-doubao-seed-2.0-code", "context_limit": 200000},
-        {"id": "ark-doubao-seed-2.0-pro", "context_limit": 200000},
-        {"id": "ark-doubao-seed-2.0-lite", "context_limit": 200000},
-        {"id": "ark-minimax-m2.7", "context_limit": 200000},
-        {"id": "ark-glm-5.1", "context_limit": 200000},
-        {"id": "ark-kimi-k2.6", "context_limit": 200000},
-        
-        {"id": "ark-deepseek-v4-pro", "context_limit": 200000},
+        {"id": "ark-code-latest", "context_limit": 200000, "max_output_tokens": 65536},
+        {"id": "ark-doubao-seed-code", "context_limit": 200000, "max_output_tokens": 65536},
+        {"id": "ark-deepseek-v3.2", "context_limit": 200000, "max_output_tokens": 65536},
+        {"id": "ark-doubao-seed-2.0-code", "context_limit": 200000, "max_output_tokens": 65536},
+        {"id": "ark-doubao-seed-2.0-pro", "context_limit": 200000, "max_output_tokens": 65536},
+        {"id": "ark-doubao-seed-2.0-lite", "context_limit": 200000, "max_output_tokens": 65536},
+        {"id": "ark-minimax-m2.7", "context_limit": 200000, "max_output_tokens": 65536},
+        {"id": "ark-glm-5.1", "context_limit": 200000, "max_output_tokens": 65536},
+        {"id": "ark-kimi-k2.6", "context_limit": 200000, "max_output_tokens": 65536},
+
+        {"id": "ark-deepseek-v4-pro", "context_limit": 200000, "max_output_tokens": 65536},
         // === 公司内部 ===
-        {"id": "com-qwen3.5-397b", "context_limit": 200000},
-        {"id": "com-qwen3.6-35b", "context_limit": 200000}
+        {"id": "com-qwen3.5-397b", "context_limit": 200000, "max_output_tokens": 65536},
+        {"id": "com-qwen3.6-35b", "context_limit": 200000, "max_output_tokens": 65536}
       ]
     }
   },
@@ -60,9 +65,8 @@
     "checkpoint_path": "./bfzs_checkpoints.db"
   },
 
-  "skills": {
-    "directory": "./myskills"
-  },
+  "skills": ["./myskills","D:/codes/lc-agent-bfzs/skills_query_feature"],
+
 
   "mcp_servers": {
     // Web 搜索 MCP
