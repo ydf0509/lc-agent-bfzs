@@ -52,7 +52,13 @@
   "agent": {
     "system_prompt": "你是一个智能助手，擅长文件管理、数据分析和日常辅助任务。请用中文回答问题。",
     "default_model": "ds-deepseek-v4-flash",
-    "streaming": true
+    "streaming": true,
+    "summarization": {
+      "enabled": true,
+      "model": "",
+      "trigger": ["fraction", 0.85],
+      "keep": ["fraction", 0.20]
+    }
   },
 
   "database": {

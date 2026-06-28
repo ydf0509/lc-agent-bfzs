@@ -33,7 +33,7 @@ def main():
         description="研究助手：擅长多步骤信息收集、整理和分析",
     )
 
-    app.run()
+    app.run(desktop=True)
 
 
 if __name__ == "__main__":
