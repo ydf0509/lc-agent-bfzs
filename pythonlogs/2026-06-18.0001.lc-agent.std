@@ -1986,3 +1986,313 @@ INFO:     connection open
 2026-06-18 22:11:28 - httpx - "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\httpx\_client.py:1740" - _send_single_request - INFO - HTTP Request: POST http://localhost:9101/mcp "HTTP/1.1 200 OK"
 2026-06-18 22:11:37 - httpx - "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\httpx\_client.py:1740" - _send_single_request - INFO - HTTP Request: POST http://localhost:4000/v1/chat/completions "HTTP/1.1 200 OK"
 2026-06-18 22:13:06 - httpx - "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\httpx\_client.py:1740" - _send_single_request - INFO - HTTP Request: POST http://localhost:4000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 22:51:35  "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\nb_log\__init__.py:53" -<module>-[print]-  
+    
+    .__   __. .______           __        ______     _______ 
+    |  \ |  | |   _  \         |  |      /  __  \   /  _____|
+    |   \|  | |  |_)  |  ______|  |     |  |  |  | |  |  __  
+    |  . `  | |   _  <  |______|  |     |  |  |  | |  | |_ | 
+    |  |\   | |  |_)  |        |  `----.|  `--'  | |  |__| | 
+    |__| \__| |______/         |_______| \______/   \______|      
+    
+          
+2026-06-18 22:51:35  "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\nb_log\__init__.py:82" -<module>-[print]-  
+        1)When using PyCharm, it is strongly recommended to re-customize the theme colors in PyCharm's console as follows, otherwise the color display may be harsh on the eyes. The colors specified in the code are just approximate red, yellow, blue, and green. The display effect varies across different IDE software, themes, and fonts, so users need to set them up themselves.
+        The setup method is: Open PyCharm -> File -> Settings -> Editor -> Color Scheme -> Console Colors, select monokai, click to expand ANSI colors,
+        and re-modify 7 custom colors: set Blue to 0454F3, Cyan to 06F0F6, Green to 13FC02, Magenta to ff1cd5, red to F80606, yellow to EAFA04, gray to FFFFFF, and white to FFFFFF.
+        Different versions of PyCharm, themes, or IDEs can be set according to the actual console display.
+
+        2)When using tools like xshell or finashell to connect to Linux, you can also customize the theme colors, or use the default colors of the shell connection tool.
+
+        Color effect as shown at https://ibb.co/qRssXTr
+
+        You can modify the default logging behavior when the get_logger method is called without parameters in nb_log_config.py at the root directory of the current project.
+
+        nb_log documentation https://nb-log-doc.readthedocs.io/zh_CN/latest/
+
+        Why set PyCharm terminal colors, explaining why  cannot determine the final color https://nb-log-doc.readthedocs.io/zh_CN/latest/articles/c1.html#c
+        
+         
+2026-06-18 22:52:02  "D:\codes\lc-agent\lc_agent\app.py:186" -run-[print]-  
+  lc_agent v0.1.0 
+2026-06-18 22:52:02  "D:\codes\lc-agent\lc_agent\app.py:187" -run-[print]-    Web UI: http://127.0.0.1:8001 
+2026-06-18 22:52:02  "D:\codes\lc-agent\lc_agent\app.py:188" -run-[print]-    API Docs: http://127.0.0.1:8001/api/docs
+ 
+INFO:     Started server process [56348]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8001 (Press CTRL+C to quit)
+2026-06-18 22:52:23 - httpx - "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\httpx\_client.py:1740" - _send_single_request - INFO - HTTP Request: POST http://localhost:9101/mcp "HTTP/1.1 200 OK"
+2026-06-18 22:52:23 - mcp.client.streamable_http - "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\mcp\client\streamable_http.py:181" - _maybe_extract_session_id_from_response - INFO - Received session ID: b6549e6f01e34e2a9e0115eab2ac0634
+2026-06-18 22:52:23 - mcp.client.streamable_http - "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\mcp\client\streamable_http.py:193" - _maybe_extract_protocol_version_from_message - INFO - Negotiated protocol version: 2025-11-25
+2026-06-18 22:52:24 - httpx - "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\httpx\_client.py:1740" - _send_single_request - INFO - HTTP Request: GET http://localhost:9101/mcp "HTTP/1.1 200 OK"
+2026-06-18 22:52:24 - httpx - "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\httpx\_client.py:1740" - _send_single_request - INFO - HTTP Request: POST http://localhost:9101/mcp "HTTP/1.1 202 Accepted"
+2026-06-18 22:52:24 - httpx - "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\httpx\_client.py:1740" - _send_single_request - INFO - HTTP Request: POST http://localhost:9101/mcp "HTTP/1.1 200 OK"
+2026-06-18 22:52:46 - httpx - "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\httpx\_client.py:1740" - _send_single_request - INFO - HTTP Request: POST https://docs.langchain.com/mcp "HTTP/1.1 200 OK"
+2026-06-18 22:52:46 - mcp.client.streamable_http - "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\mcp\client\streamable_http.py:193" - _maybe_extract_protocol_version_from_message - INFO - Negotiated protocol version: 2025-11-25
+2026-06-18 22:52:48 - httpx - "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\httpx\_client.py:1740" - _send_single_request - INFO - HTTP Request: POST https://docs.langchain.com/mcp "HTTP/1.1 202 Accepted"
+2026-06-18 22:52:49 - httpx - "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\httpx\_client.py:1740" - _send_single_request - INFO - HTTP Request: POST https://docs.langchain.com/mcp "HTTP/1.1 200 OK"
+2026-06-18 22:52:50 - httpx - "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\httpx\_client.py:1740" - _send_single_request - INFO - HTTP Request: POST https://reference.langchain.com/mcp "HTTP/1.1 200 OK"
+2026-06-18 22:52:50 - mcp.client.streamable_http - "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\mcp\client\streamable_http.py:193" - _maybe_extract_protocol_version_from_message - INFO - Negotiated protocol version: 2024-11-05
+2026-06-18 22:52:50 - httpx - "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\httpx\_client.py:1740" - _send_single_request - INFO - HTTP Request: POST https://reference.langchain.com/mcp "HTTP/1.1 200 OK"
+2026-06-18 22:52:51 - httpx - "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\httpx\_client.py:1740" - _send_single_request - INFO - HTTP Request: POST https://reference.langchain.com/mcp "HTTP/1.1 200 OK"
+2026-06-18 22:52:51  "D:\codes\lc-agent\lc_agent\app.py:65" -_connect_mcp_background-[print]-  [MCP] Connected: ['filesystem', 'nbrag', 'context7', 'docs-langchain', 'reference-langchain'] 
+INFO:     127.0.0.1:59174 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59174 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59177 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59177 - "GET /assets/index-DEKqaHTB.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59178 - "GET /assets/index-BQ3wanSA.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59178 - "GET /api/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59177 - "GET /api/tools/groups HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59183 - "GET /api/mcp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59184 - "GET /api/skills HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59185 - "GET /api/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59186 - "GET /api/agents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59187 - "WebSocket /ws/chat" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:59186 - "GET /favicon.svg HTTP/1.1" 200 OK
+2026-06-18 23:03:43  "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\nb_log\__init__.py:53" -<module>-[print]-  
+    
+    .__   __. .______           __        ______     _______ 
+    |  \ |  | |   _  \         |  |      /  __  \   /  _____|
+    |   \|  | |  |_)  |  ______|  |     |  |  |  | |  |  __  
+    |  . `  | |   _  <  |______|  |     |  |  |  | |  | |_ | 
+    |  |\   | |  |_)  |        |  `----.|  `--'  | |  |__| | 
+    |__| \__| |______/         |_______| \______/   \______|      
+    
+          
+2026-06-18 23:03:43  "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\nb_log\__init__.py:82" -<module>-[print]-  
+        1)When using PyCharm, it is strongly recommended to re-customize the theme colors in PyCharm's console as follows, otherwise the color display may be harsh on the eyes. The colors specified in the code are just approximate red, yellow, blue, and green. The display effect varies across different IDE software, themes, and fonts, so users need to set them up themselves.
+        The setup method is: Open PyCharm -> File -> Settings -> Editor -> Color Scheme -> Console Colors, select monokai, click to expand ANSI colors,
+        and re-modify 7 custom colors: set Blue to 0454F3, Cyan to 06F0F6, Green to 13FC02, Magenta to ff1cd5, red to F80606, yellow to EAFA04, gray to FFFFFF, and white to FFFFFF.
+        Different versions of PyCharm, themes, or IDEs can be set according to the actual console display.
+
+        2)When using tools like xshell or finashell to connect to Linux, you can also customize the theme colors, or use the default colors of the shell connection tool.
+
+        Color effect as shown at https://ibb.co/qRssXTr
+
+        You can modify the default logging behavior when the get_logger method is called without parameters in nb_log_config.py at the root directory of the current project.
+
+        nb_log documentation https://nb-log-doc.readthedocs.io/zh_CN/latest/
+
+        Why set PyCharm terminal colors, explaining why  cannot determine the final color https://nb-log-doc.readthedocs.io/zh_CN/latest/articles/c1.html#c
+        
+         
+2026-06-18 23:04:12  "D:\codes\lc-agent\lc_agent\app.py:186" -run-[print]-  
+  lc_agent v0.1.0 
+2026-06-18 23:04:12  "D:\codes\lc-agent\lc_agent\app.py:187" -run-[print]-    Web UI: http://127.0.0.1:8001 
+2026-06-18 23:04:12  "D:\codes\lc-agent\lc_agent\app.py:188" -run-[print]-    API Docs: http://127.0.0.1:8001/api/docs
+ 
+INFO:     Started server process [68400]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8001 (Press CTRL+C to quit)
+INFO:     127.0.0.1:58718 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58718 - "GET /assets/index-DEKqaHTB.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58719 - "GET /assets/index-BQ3wanSA.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58718 - "GET /api/tools/groups HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58722 - "GET /api/mcp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58719 - "GET /api/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58723 - "GET /api/skills HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58725 - "GET /api/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58724 - "GET /api/agents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58727 - "WebSocket /ws/chat" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:58724 - "GET /favicon.svg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:55924 - "GET / HTTP/1.1" 304 Not Modified
+INFO:     connection closed
+INFO:     127.0.0.1:55924 - "GET /assets/index-DEKqaHTB.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:55925 - "GET /assets/index-BQ3wanSA.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:55925 - "GET /api/tools/groups HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55924 - "GET /api/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55929 - "GET /api/mcp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55930 - "GET /api/skills HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55932 - "GET /api/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55931 - "GET /api/agents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55933 - "WebSocket /ws/chat" [accepted]
+INFO:     connection open
+2026-06-18 23:04:31 - httpx - "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\httpx\_client.py:1740" - _send_single_request - INFO - HTTP Request: POST http://localhost:9101/mcp "HTTP/1.1 200 OK"
+2026-06-18 23:04:31 - mcp.client.streamable_http - "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\mcp\client\streamable_http.py:181" - _maybe_extract_session_id_from_response - INFO - Received session ID: f09c591d61064c5cbd1dfcaac1792812
+2026-06-18 23:04:31 - mcp.client.streamable_http - "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\mcp\client\streamable_http.py:193" - _maybe_extract_protocol_version_from_message - INFO - Negotiated protocol version: 2025-11-25
+2026-06-18 23:04:32 - httpx - "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\httpx\_client.py:1740" - _send_single_request - INFO - HTTP Request: GET http://localhost:9101/mcp "HTTP/1.1 200 OK"
+2026-06-18 23:04:32 - httpx - "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\httpx\_client.py:1740" - _send_single_request - INFO - HTTP Request: POST http://localhost:9101/mcp "HTTP/1.1 202 Accepted"
+2026-06-18 23:04:32 - httpx - "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\httpx\_client.py:1740" - _send_single_request - INFO - HTTP Request: POST http://localhost:9101/mcp "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:61633 - "POST /api/agents/__empty__/activate HTTP/1.1" 200 OK
+INFO:     connection closed
+INFO:     127.0.0.1:61633 - "GET /api/sessions/617eac09-28cc-4b41-b26d-2b8a55162564/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61637 - "WebSocket /ws/chat/617eac09-28cc-4b41-b26d-2b8a55162564" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:63354 - "POST /api/agents/__chat__/activate HTTP/1.1" 200 OK
+INFO:     connection closed
+INFO:     127.0.0.1:63354 - "GET /api/sessions/59ac28c7-2c63-442f-972d-3b1f10ddc53a/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63355 - "WebSocket /ws/chat/59ac28c7-2c63-442f-972d-3b1f10ddc53a" [accepted]
+INFO:     connection open
+2026-06-18 23:04:54 - httpx - "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\httpx\_client.py:1740" - _send_single_request - INFO - HTTP Request: POST https://docs.langchain.com/mcp "HTTP/1.1 200 OK"
+2026-06-18 23:04:54 - mcp.client.streamable_http - "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\mcp\client\streamable_http.py:193" - _maybe_extract_protocol_version_from_message - INFO - Negotiated protocol version: 2025-11-25
+2026-06-18 23:04:55 - httpx - "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\httpx\_client.py:1740" - _send_single_request - INFO - HTTP Request: POST https://docs.langchain.com/mcp "HTTP/1.1 202 Accepted"
+2026-06-18 23:04:56 - httpx - "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\httpx\_client.py:1740" - _send_single_request - INFO - HTTP Request: POST https://docs.langchain.com/mcp "HTTP/1.1 200 OK"
+2026-06-18 23:04:57 - httpx - "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\httpx\_client.py:1740" - _send_single_request - INFO - HTTP Request: POST https://reference.langchain.com/mcp "HTTP/1.1 200 OK"
+2026-06-18 23:04:57 - mcp.client.streamable_http - "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\mcp\client\streamable_http.py:193" - _maybe_extract_protocol_version_from_message - INFO - Negotiated protocol version: 2024-11-05
+2026-06-18 23:04:57 - httpx - "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\httpx\_client.py:1740" - _send_single_request - INFO - HTTP Request: POST https://reference.langchain.com/mcp "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:63419 - "POST /api/sessions HTTP/1.1" 201 Created
+INFO:     connection closed
+INFO:     127.0.0.1:63420 - "WebSocket /ws/chat/a9e0c4a2-9bab-433a-8804-14506fdc54a9" [accepted]
+INFO:     connection open
+2026-06-18 23:04:58 - httpx - "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\httpx\_client.py:1740" - _send_single_request - INFO - HTTP Request: POST https://reference.langchain.com/mcp "HTTP/1.1 200 OK"
+2026-06-18 23:04:58  "D:\codes\lc-agent\lc_agent\app.py:65" -_connect_mcp_background-[print]-  [MCP] Connected: ['context7', 'docs-langchain', 'reference-langchain'] 
+2026-06-18 23:05:01 - httpx - "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\httpx\_client.py:1740" - _send_single_request - INFO - HTTP Request: POST http://localhost:4000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 23:05:03 - httpx - "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\httpx\_client.py:1740" - _send_single_request - INFO - HTTP Request: POST http://localhost:4000/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:49278 - "POST /api/agents HTTP/1.1" 201 Created
+INFO:     127.0.0.1:49278 - "POST /api/agents/00f370ee-834e-4704-ab01-664366bec064/activate HTTP/1.1" 200 OK
+INFO:     connection closed
+INFO:     127.0.0.1:49278 - "PUT /api/sessions/a9e0c4a2-9bab-433a-8804-14506fdc54a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49278 - "GET /api/sessions/34a95d2a-5896-412b-a7d1-b4bd6858060a/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49300 - "WebSocket /ws/chat/34a95d2a-5896-412b-a7d1-b4bd6858060a" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:62556 - "POST /api/sessions HTTP/1.1" 201 Created
+INFO:     connection closed
+INFO:     127.0.0.1:62557 - "WebSocket /ws/chat/bb0fab2d-dc03-419b-a174-d6adb8f0ba26" [accepted]
+INFO:     connection open
+2026-06-18 23:15:50 - httpx - "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\httpx\_client.py:1740" - _send_single_request - INFO - HTTP Request: POST http://localhost:4000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 23:15:51 - httpx - "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\httpx\_client.py:1740" - _send_single_request - INFO - HTTP Request: POST http://localhost:9101/mcp "HTTP/1.1 200 OK"
+2026-06-18 23:16:05 - httpx - "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\httpx\_client.py:1740" - _send_single_request - INFO - HTTP Request: POST http://localhost:4000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 23:16:10 - httpx - "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\httpx\_client.py:1740" - _send_single_request - INFO - HTTP Request: POST http://localhost:9101/mcp "HTTP/1.1 200 OK"
+2026-06-18 23:16:11 - httpx - "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\httpx\_client.py:1740" - _send_single_request - INFO - HTTP Request: POST http://localhost:9101/mcp "HTTP/1.1 200 OK"
+2026-06-18 23:16:11 - httpx - "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\httpx\_client.py:1740" - _send_single_request - INFO - HTTP Request: POST http://localhost:9101/mcp "HTTP/1.1 200 OK"
+2026-06-18 23:16:12 - httpx - "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\httpx\_client.py:1740" - _send_single_request - INFO - HTTP Request: POST http://localhost:9101/mcp "HTTP/1.1 200 OK"
+2026-06-18 23:16:15 - httpx - "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\httpx\_client.py:1740" - _send_single_request - INFO - HTTP Request: POST http://localhost:4000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 23:16:25 - httpx - "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\httpx\_client.py:1740" - _send_single_request - INFO - HTTP Request: POST http://localhost:4000/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:53585 - "GET /assets/index-BQ3wanSA.css HTTP/1.1" 304 Not Modified
+2026-06-18 23:29:43 - mcp.client.streamable_http - "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\mcp\client\streamable_http.py:298" - handle_get_stream - INFO - GET stream disconnected, reconnecting in 1000ms...
+2026-06-18 23:44:20  "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\nb_log\__init__.py:53" -<module>-[print]-  
+    
+    .__   __. .______           __        ______     _______ 
+    |  \ |  | |   _  \         |  |      /  __  \   /  _____|
+    |   \|  | |  |_)  |  ______|  |     |  |  |  | |  |  __  
+    |  . `  | |   _  <  |______|  |     |  |  |  | |  | |_ | 
+    |  |\   | |  |_)  |        |  `----.|  `--'  | |  |__| | 
+    |__| \__| |______/         |_______| \______/   \______|      
+    
+          
+2026-06-18 23:44:20  "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\nb_log\__init__.py:82" -<module>-[print]-  
+        1)When using PyCharm, it is strongly recommended to re-customize the theme colors in PyCharm's console as follows, otherwise the color display may be harsh on the eyes. The colors specified in the code are just approximate red, yellow, blue, and green. The display effect varies across different IDE software, themes, and fonts, so users need to set them up themselves.
+        The setup method is: Open PyCharm -> File -> Settings -> Editor -> Color Scheme -> Console Colors, select monokai, click to expand ANSI colors,
+        and re-modify 7 custom colors: set Blue to 0454F3, Cyan to 06F0F6, Green to 13FC02, Magenta to ff1cd5, red to F80606, yellow to EAFA04, gray to FFFFFF, and white to FFFFFF.
+        Different versions of PyCharm, themes, or IDEs can be set according to the actual console display.
+
+        2)When using tools like xshell or finashell to connect to Linux, you can also customize the theme colors, or use the default colors of the shell connection tool.
+
+        Color effect as shown at https://ibb.co/qRssXTr
+
+        You can modify the default logging behavior when the get_logger method is called without parameters in nb_log_config.py at the root directory of the current project.
+
+        nb_log documentation https://nb-log-doc.readthedocs.io/zh_CN/latest/
+
+        Why set PyCharm terminal colors, explaining why  cannot determine the final color https://nb-log-doc.readthedocs.io/zh_CN/latest/articles/c1.html#c
+        
+         
+2026-06-18 23:44:56  "D:\codes\lc-agent\lc_agent\app.py:186" -run-[print]-  
+  lc_agent v0.1.0 
+2026-06-18 23:44:56  "D:\codes\lc-agent\lc_agent\app.py:187" -run-[print]-    Web UI: http://127.0.0.1:8001 
+2026-06-18 23:44:56  "D:\codes\lc-agent\lc_agent\app.py:188" -run-[print]-    API Docs: http://127.0.0.1:8001/api/docs
+ 
+INFO:     Started server process [79628]
+INFO:     Waiting for application startup.
+2026-06-18 23:44:56  "D:\codes\lc-agent\lc_agent\app.py:152" -_load_presets_from_db-[print]-  [Agents] Loaded 1 user presets from database 
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8001 (Press CTRL+C to quit)
+2026-06-18 23:45:24 - httpx - "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\httpx\_client.py:1740" - _send_single_request - INFO - HTTP Request: POST http://localhost:9101/mcp "HTTP/1.1 200 OK"
+2026-06-18 23:45:24 - mcp.client.streamable_http - "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\mcp\client\streamable_http.py:181" - _maybe_extract_session_id_from_response - INFO - Received session ID: dce98fd8588749a096b2be9e13314036
+2026-06-18 23:45:24 - mcp.client.streamable_http - "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\mcp\client\streamable_http.py:193" - _maybe_extract_protocol_version_from_message - INFO - Negotiated protocol version: 2025-11-25
+2026-06-18 23:45:25 - httpx - "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\httpx\_client.py:1740" - _send_single_request - INFO - HTTP Request: GET http://localhost:9101/mcp "HTTP/1.1 200 OK"
+2026-06-18 23:45:25 - httpx - "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\httpx\_client.py:1740" - _send_single_request - INFO - HTTP Request: POST http://localhost:9101/mcp "HTTP/1.1 202 Accepted"
+2026-06-18 23:45:25 - httpx - "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\httpx\_client.py:1740" - _send_single_request - INFO - HTTP Request: POST http://localhost:9101/mcp "HTTP/1.1 200 OK"
+2026-06-18 23:45:46 - httpx - "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\httpx\_client.py:1740" - _send_single_request - INFO - HTTP Request: POST https://docs.langchain.com/mcp "HTTP/1.1 200 OK"
+2026-06-18 23:45:46 - mcp.client.streamable_http - "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\mcp\client\streamable_http.py:193" - _maybe_extract_protocol_version_from_message - INFO - Negotiated protocol version: 2025-11-25
+2026-06-18 23:45:47 - httpx - "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\httpx\_client.py:1740" - _send_single_request - INFO - HTTP Request: POST https://docs.langchain.com/mcp "HTTP/1.1 202 Accepted"
+2026-06-18 23:45:47 - httpx - "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\httpx\_client.py:1740" - _send_single_request - INFO - HTTP Request: POST https://docs.langchain.com/mcp "HTTP/1.1 200 OK"
+2026-06-18 23:45:48 - httpx - "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\httpx\_client.py:1740" - _send_single_request - INFO - HTTP Request: POST https://reference.langchain.com/mcp "HTTP/1.1 200 OK"
+2026-06-18 23:45:48 - mcp.client.streamable_http - "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\mcp\client\streamable_http.py:193" - _maybe_extract_protocol_version_from_message - INFO - Negotiated protocol version: 2024-11-05
+2026-06-18 23:45:48 - httpx - "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\httpx\_client.py:1740" - _send_single_request - INFO - HTTP Request: POST https://reference.langchain.com/mcp "HTTP/1.1 200 OK"
+2026-06-18 23:45:49 - httpx - "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\httpx\_client.py:1740" - _send_single_request - INFO - HTTP Request: POST https://reference.langchain.com/mcp "HTTP/1.1 200 OK"
+2026-06-18 23:45:49  "D:\codes\lc-agent\lc_agent\app.py:65" -_connect_mcp_background-[print]-  [MCP] Connected: ['filesystem', 'nbrag', 'context7', 'docs-langchain', 'reference-langchain'] 
+2026-06-18 23:52:05  "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\nb_log\__init__.py:53" -<module>-[print]-  
+    
+    .__   __. .______           __        ______     _______ 
+    |  \ |  | |   _  \         |  |      /  __  \   /  _____|
+    |   \|  | |  |_)  |  ______|  |     |  |  |  | |  |  __  
+    |  . `  | |   _  <  |______|  |     |  |  |  | |  | |_ | 
+    |  |\   | |  |_)  |        |  `----.|  `--'  | |  |__| | 
+    |__| \__| |______/         |_______| \______/   \______|      
+    
+          
+2026-06-18 23:52:05  "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\nb_log\__init__.py:82" -<module>-[print]-  
+        1)When using PyCharm, it is strongly recommended to re-customize the theme colors in PyCharm's console as follows, otherwise the color display may be harsh on the eyes. The colors specified in the code are just approximate red, yellow, blue, and green. The display effect varies across different IDE software, themes, and fonts, so users need to set them up themselves.
+        The setup method is: Open PyCharm -> File -> Settings -> Editor -> Color Scheme -> Console Colors, select monokai, click to expand ANSI colors,
+        and re-modify 7 custom colors: set Blue to 0454F3, Cyan to 06F0F6, Green to 13FC02, Magenta to ff1cd5, red to F80606, yellow to EAFA04, gray to FFFFFF, and white to FFFFFF.
+        Different versions of PyCharm, themes, or IDEs can be set according to the actual console display.
+
+        2)When using tools like xshell or finashell to connect to Linux, you can also customize the theme colors, or use the default colors of the shell connection tool.
+
+        Color effect as shown at https://ibb.co/qRssXTr
+
+        You can modify the default logging behavior when the get_logger method is called without parameters in nb_log_config.py at the root directory of the current project.
+
+        nb_log documentation https://nb-log-doc.readthedocs.io/zh_CN/latest/
+
+        Why set PyCharm terminal colors, explaining why  cannot determine the final color https://nb-log-doc.readthedocs.io/zh_CN/latest/articles/c1.html#c
+        
+         
+2026-06-18 23:52:48  "D:\codes\lc-agent\lc_agent\app.py:186" -run-[print]-  
+  lc_agent v0.1.0 
+2026-06-18 23:52:48  "D:\codes\lc-agent\lc_agent\app.py:187" -run-[print]-    Web UI: http://127.0.0.1:8001 
+2026-06-18 23:52:48  "D:\codes\lc-agent\lc_agent\app.py:188" -run-[print]-    API Docs: http://127.0.0.1:8001/api/docs
+ 
+INFO:     Started server process [2604]
+INFO:     Waiting for application startup.
+2026-06-18 23:52:48  "D:\codes\lc-agent\lc_agent\app.py:152" -_load_presets_from_db-[print]-  [Agents] Loaded 1 user presets from database 
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8001 (Press CTRL+C to quit)
+INFO:     127.0.0.1:50199 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50199 - "GET /assets/index-DEKqaHTB.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50200 - "GET /assets/index-BQ3wanSA.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50199 - "GET /api/tools/groups HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50200 - "GET /api/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51218 - "GET /api/mcp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51219 - "GET /api/skills HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51221 - "GET /api/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51220 - "GET /api/agents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51222 - "WebSocket /ws/chat" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:51220 - "GET /favicon.svg HTTP/1.1" 304 Not Modified
+INFO:     connection closed
+INFO:     127.0.0.1:57721 - "GET /api/sessions/bb0fab2d-dc03-419b-a174-d6adb8f0ba26/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57720 - "PUT /api/sessions/bb0fab2d-dc03-419b-a174-d6adb8f0ba26 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57726 - "WebSocket /ws/chat/bb0fab2d-dc03-419b-a174-d6adb8f0ba26" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     127.0.0.1:57727 - "POST /api/agents/00f370ee-834e-4704-ab01-664366bec064/activate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57721 - "GET /api/sessions/bb0fab2d-dc03-419b-a174-d6adb8f0ba26/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57720 - "PUT /api/sessions/bb0fab2d-dc03-419b-a174-d6adb8f0ba26 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57728 - "WebSocket /ws/chat/bb0fab2d-dc03-419b-a174-d6adb8f0ba26" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     127.0.0.1:57721 - "GET /api/sessions/bb0fab2d-dc03-419b-a174-d6adb8f0ba26/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57720 - "PUT /api/sessions/bb0fab2d-dc03-419b-a174-d6adb8f0ba26 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64207 - "WebSocket /ws/chat/bb0fab2d-dc03-419b-a174-d6adb8f0ba26" [accepted]
+INFO:     connection open
+2026-06-18 23:53:09 - httpx - "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\httpx\_client.py:1740" - _send_single_request - INFO - HTTP Request: POST http://localhost:9101/mcp "HTTP/1.1 200 OK"
+2026-06-18 23:53:09 - mcp.client.streamable_http - "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\mcp\client\streamable_http.py:181" - _maybe_extract_session_id_from_response - INFO - Received session ID: 03d8092566fe4bd0ba5b2c3eeccf2d95
+2026-06-18 23:53:09 - mcp.client.streamable_http - "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\mcp\client\streamable_http.py:193" - _maybe_extract_protocol_version_from_message - INFO - Negotiated protocol version: 2025-11-25
+2026-06-18 23:53:10 - httpx - "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\httpx\_client.py:1740" - _send_single_request - INFO - HTTP Request: GET http://localhost:9101/mcp "HTTP/1.1 200 OK"
+2026-06-18 23:53:10 - httpx - "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\httpx\_client.py:1740" - _send_single_request - INFO - HTTP Request: POST http://localhost:9101/mcp "HTTP/1.1 202 Accepted"
+2026-06-18 23:53:10 - httpx - "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\httpx\_client.py:1740" - _send_single_request - INFO - HTTP Request: POST http://localhost:9101/mcp "HTTP/1.1 200 OK"
+2026-06-18 23:53:33 - httpx - "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\httpx\_client.py:1740" - _send_single_request - INFO - HTTP Request: POST https://docs.langchain.com/mcp "HTTP/1.1 200 OK"
+2026-06-18 23:53:33 - mcp.client.streamable_http - "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\mcp\client\streamable_http.py:193" - _maybe_extract_protocol_version_from_message - INFO - Negotiated protocol version: 2025-11-25
+2026-06-18 23:53:34 - httpx - "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\httpx\_client.py:1740" - _send_single_request - INFO - HTTP Request: POST https://docs.langchain.com/mcp "HTTP/1.1 202 Accepted"
+2026-06-18 23:53:34 - httpx - "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\httpx\_client.py:1740" - _send_single_request - INFO - HTTP Request: POST https://docs.langchain.com/mcp "HTTP/1.1 200 OK"
+2026-06-18 23:53:35 - httpx - "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\httpx\_client.py:1740" - _send_single_request - INFO - HTTP Request: POST https://reference.langchain.com/mcp "HTTP/1.1 200 OK"
+2026-06-18 23:53:35 - mcp.client.streamable_http - "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\mcp\client\streamable_http.py:193" - _maybe_extract_protocol_version_from_message - INFO - Negotiated protocol version: 2024-11-05
+2026-06-18 23:53:35 - httpx - "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\httpx\_client.py:1740" - _send_single_request - INFO - HTTP Request: POST https://reference.langchain.com/mcp "HTTP/1.1 200 OK"
+2026-06-18 23:53:36 - httpx - "D:\ProgramData\miniconda3\envs\py312\Lib\site-packages\httpx\_client.py:1740" - _send_single_request - INFO - HTTP Request: POST https://reference.langchain.com/mcp "HTTP/1.1 200 OK"
+2026-06-18 23:53:36  "D:\codes\lc-agent\lc_agent\app.py:65" -_connect_mcp_background-[print]-  [MCP] Connected: ['filesystem', 'nbrag', 'context7', 'docs-langchain', 'reference-langchain'] 

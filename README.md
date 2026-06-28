@@ -57,7 +57,7 @@ def read_file(file_path: str) -> str:
     ...
 ```
 
-### 2. 自定义 Agent（CompiledGraph）
+### 2. 使用LangGraph代码自定义 Agent（CompiledGraph）
 
 使用 LangGraph 构建自定义 StateGraph，通过 `app.add_agent()` 注册：
 
@@ -74,6 +74,14 @@ graph.add_edge("execute", END)
 compiled = graph.compile()
 app.add_agent("my_agent", compiled, description="我的Agent")
 ```
+
+### 2.2 在网页创建agent
+
+lc-agent 是一个框架，0门槛即可使用，如果用户不是码农，不会写langgraph langhchain的代码，可以在网页可视化创建Agent。
+
+在 Web UI 中，点击 "创建新 Agent" 按钮，填写 Agent 名称、模型、提示词、关联的工具组、mcp、skills
+
+
 
 ### 3. 自定义 Skills
 
