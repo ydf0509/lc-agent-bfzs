@@ -60,7 +60,7 @@
     "streaming": true,
     "summarization": {
       "enabled": true,
-      "model": "",
+      "default_model": "",
       "trigger": ["fraction", 0.85],
       "keep": ["fraction", 0.20]
     }
