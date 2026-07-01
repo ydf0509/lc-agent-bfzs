@@ -60,7 +60,7 @@
     "streaming": true,
     "summarization": {
       "enabled": true,
-      "default_model": "ds-deepseek-v4-flash",
+      "default_model": "",
       "trigger": ["fraction", 0.85],
       "keep": ["fraction", 0.20]
     }
