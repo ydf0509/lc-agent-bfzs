@@ -59,7 +59,7 @@
     "default_model": "ds-deepseek-v4-flash",
     "streaming": true,
     "summarization": {
-      "enabled": false,
+      "enabled": true,
       "model": "",
       "trigger": ["fraction", 0.85],
       "keep": ["fraction", 0.20]
