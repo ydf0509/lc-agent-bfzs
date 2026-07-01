@@ -1,18 +1,16 @@
 """文件管理工具组 — 提供文件读写、目录浏览等功能"""
 
-import os
 from pathlib import Path
+from typing import Annotated
 
 from lc_agent import tool
 
 
 @tool(group="file_mgmt", group_description="文件管理")
-def read_file(file_path: str) -> str:
-    """读取指定文件的内容。
-
-    Args:
-        file_path: 文件的绝对或相对路径
-    """
+def read_file(
+    file_path: Annotated[str, "文件的绝对或相对路径"],
+) -> str:
+    """读取指定文件的内容。"""
     p = Path(file_path).expanduser()
     if not p.exists():
         return f"错误: 文件不存在 - {p}"
@@ -25,13 +23,11 @@ def read_file(file_path: str) -> str:
 
 
 @tool(group="file_mgmt", group_description="文件管理")
-def write_file(file_path: str, content: str) -> str:
-    """将内容写入指定文件（会覆盖已有内容）。
-
-    Args:
-        file_path: 文件路径
-        content: 要写入的内容
-    """
+def write_file(
+    file_path: Annotated[str, "文件路径"],
+    content: Annotated[str, "要写入的内容"],
+) -> str:
+    """将内容写入指定文件（会覆盖已有内容）。"""
     p = Path(file_path).expanduser()
     p.parent.mkdir(parents=True, exist_ok=True)
     p.write_text(content, encoding="utf-8")
@@ -39,13 +35,11 @@ def write_file(file_path: str, content: str) -> str:
 
 
 @tool(group="file_mgmt", group_description="文件管理")
-def list_directory(directory: str = ".", show_hidden: bool = False) -> str:
-    """列出目录下的所有文件和子目录。
-
-    Args:
-        directory: 目录路径，默认当前目录
-        show_hidden: 是否显示隐藏文件
-    """
+def list_directory(
+    directory: Annotated[str, "目录路径"] = ".",
+    show_hidden: Annotated[bool, "是否显示隐藏文件"] = False,
+) -> str:
+    """列出目录下的所有文件和子目录。"""
     p = Path(directory).expanduser()
     if not p.exists():
         return f"错误: 目录不存在 - {p}"
@@ -69,13 +63,11 @@ def list_directory(directory: str = ".", show_hidden: bool = False) -> str:
 
 
 @tool(group="file_mgmt", group_description="文件管理")
-def search_files(directory: str, pattern: str) -> str:
-    """递归搜索匹配模式的文件。
-
-    Args:
-        directory: 搜索根目录
-        pattern: glob 模式，如 *.py, **/*.md
-    """
+def search_files(
+    directory: Annotated[str, "搜索根目录"],
+    pattern: Annotated[str, "glob 模式，如 *.py, **/*.md"],
+) -> str:
+    """递归搜索匹配模式的文件。"""
     p = Path(directory).expanduser()
     if not p.exists():
         return f"错误: 目录不存在 - {p}"

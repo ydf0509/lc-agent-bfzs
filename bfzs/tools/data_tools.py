@@ -1,19 +1,19 @@
 """数据分析工具组 — 提供简单的数据处理和计算功能"""
 
+import csv
 import json
 import math
-from typing import Any
+from pathlib import Path
+from typing import Annotated
 
 from lc_agent import tool
 
 
 @tool(group="data_analysis", group_description="数据分析")
-def calculate(expression: str) -> str:
-    """计算数学表达式。支持基本运算和 math 模块函数。
-
-    Args:
-        expression: 数学表达式，如 "2**10", "math.sqrt(144)", "sum([1,2,3,4,5])"
-    """
+def calculate(
+    expression: Annotated[str, '数学表达式，如 "2**10", "math.sqrt(144)", "sum([1,2,3,4,5])"'],
+) -> str:
+    """计算数学表达式。支持基本运算和 math 模块函数。"""
     allowed_names = {
         k: v for k, v in math.__dict__.items() if not k.startswith("_")
     }
@@ -27,12 +27,10 @@ def calculate(expression: str) -> str:
 
 
 @tool(group="data_analysis", group_description="数据分析")
-def parse_json(json_string: str) -> str:
-    """解析 JSON 字符串并格式化输出。
-
-    Args:
-        json_string: JSON 格式字符串
-    """
+def parse_json(
+    json_string: Annotated[str, "JSON 格式字符串"],
+) -> str:
+    """解析 JSON 字符串并格式化输出。"""
     try:
         data = json.loads(json_string)
         formatted = json.dumps(data, ensure_ascii=False, indent=2)
@@ -42,12 +40,10 @@ def parse_json(json_string: str) -> str:
 
 
 @tool(group="data_analysis", group_description="数据分析")
-def text_statistics(text: str) -> str:
-    """统计文本的基本信息。
-
-    Args:
-        text: 要分析的文本
-    """
+def text_statistics(
+    text: Annotated[str, "要分析的文本"],
+) -> str:
+    """统计文本的基本信息。"""
     lines = text.split("\n")
     words = text.split()
     chars = len(text)
@@ -63,16 +59,11 @@ def text_statistics(text: str) -> str:
 
 
 @tool(group="data_analysis", group_description="数据分析")
-def csv_preview(file_path: str, max_rows: int = 10) -> str:
-    """预览 CSV 文件的前几行。
-
-    Args:
-        file_path: CSV 文件路径
-        max_rows: 最多显示的行数，默认10行
-    """
-    from pathlib import Path
-    import csv
-
+def csv_preview(
+    file_path: Annotated[str, "CSV 文件路径"],
+    max_rows: Annotated[int, "最多显示的行数"] = 10,
+) -> str:
+    """预览 CSV 文件的前几行。"""
     p = Path(file_path).expanduser()
     if not p.exists():
         return f"错误: 文件不存在 - {p}"

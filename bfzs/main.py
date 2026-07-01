@@ -17,6 +17,10 @@ def main():
 
     config = load_config(config_path=config_path)
 
+    # 导入框架内置通用工具
+    import lc_agent.tools.contrib_tools.get_time  # noqa: F401
+    import lc_agent.tools.contrib_tools.ask_user_tool  # noqa: F401
+
     # 导入自定义工具（导入即注册到全局 ToolRegistry）
     import bfzs.tools.file_tools  # noqa: F401
     import bfzs.tools.data_tools  # noqa: F401
