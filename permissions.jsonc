@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "tool_allowlist": [
+    "mcp__nbrag__nbrag_get_raw_file",
+    "mcp__nbrag__nbrag_help",
+    "mcp__nbrag__nbrag_search_and_fetch",
+    "mcp__nbrag__nbrag_search_only_bm25",
+    "mcp__nbrag__nbrag_stats"
+  ]
+}

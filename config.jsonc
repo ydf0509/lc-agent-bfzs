@@ -66,6 +66,11 @@
     }
   },
 
+  "auth": {
+    "secret": "bfzs-dev-jwt-secret-key-2026",
+    "token_expire_days": 7
+  },
+
   "database": {
     "url": "sqlite+aiosqlite:///./bfzs_data.db",
     "checkpoint_path": "./bfzs_checkpoints.db"
