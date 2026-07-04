@@ -33,6 +33,27 @@
         {"id": "zzz-fallback-gpt-5.4", "context_limit": 400000, "max_output_tokens": 65536},
         {"id": "zzz-fallback-gpt-5.5", "context_limit": 400000, "max_output_tokens": 65536},
 
+        // === OpenCodeGo ===
+        {"id": "go-glm-5.2", "context_limit": 200000, "max_output_tokens": 65536},
+        {"id": "go-kimi-k2.7-code", "context_limit": 200000, "max_output_tokens": 65536},
+        {"id": "go-kimi-k2.6", "context_limit": 200000, "max_output_tokens": 65536},
+        {"id": "go-deepseek-v4-pro", "context_limit": 200000, "max_output_tokens": 65536},
+        {"id": "go-deepseek-v4-flash", "context_limit": 200000, "max_output_tokens": 65536},
+        {"id": "go-mimo-v2.5", "context_limit": 200000, "max_output_tokens": 65536},
+        {"id": "go-mimo-v2.5-pro", "context_limit": 200000, "max_output_tokens": 65536},
+        {"id": "go-minimax-m3", "context_limit": 200000, "max_output_tokens": 65536},
+        {"id": "go-qwen3.7-max", "context_limit": 200000, "max_output_tokens": 65536},
+        {"id": "go-qwen3.7-plus", "context_limit": 200000, "max_output_tokens": 65536},
+
+
+
+
+
+
+
+
+
+
         {"id": "ds-deepseek-v4-pro", "context_limit": 200000, "max_output_tokens": 65536},
         {"id": "ds-deepseek-v4-flash", "context_limit": 200000, "max_output_tokens": 65536},
         // === 字节方舟 Coding Plan ===
@@ -50,6 +71,7 @@
         // === 公司内部 ===
         {"id": "com-qwen3.5-397b", "context_limit": 200000, "max_output_tokens": 65536},
         {"id": "com-qwen3.6-35b", "context_limit": 200000, "max_output_tokens": 65536}
+        
       ]
     }
   },
@@ -58,6 +80,7 @@
     "system_prompt": "你是一个智能助手，擅长文件管理、数据分析和日常辅助任务。请用中文回答问题。",
     "default_model": "ds-deepseek-v4-flash",
     "streaming": true,
+    "recursion_limit":200,
     "summarization": {
       "enabled": true,
       "default_model": "",
