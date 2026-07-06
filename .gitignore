@@ -229,3 +229,4 @@ bfzs_data.db-shm
 bfzs_data.db-wal
 bfzs_memory.db
 permissions.jsonc
+debug_bfzs_data_same_dir_copy.db
