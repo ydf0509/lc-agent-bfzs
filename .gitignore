@@ -225,3 +225,5 @@ myskills/query-feature-logic
 skills_query_feature/
 pythonlogs/
 .tmp/
+bfzs_data.db-shm
+bfzs_data.db-wal
