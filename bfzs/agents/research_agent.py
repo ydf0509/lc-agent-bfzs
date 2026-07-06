@@ -13,7 +13,8 @@ from typing import Annotated, TypedDict
 from langchain_core.messages import AIMessage, HumanMessage, SystemMessage
 from langgraph.graph import StateGraph, START, END
 from langgraph.graph.message import add_messages
-
+from lc_agent.core.chat_model import ChatOpenAIReasoning
+from lc_agent import create_traced_chat_openai
 
 class ResearchState(TypedDict):
     """研究 Agent 的状态定义"""
@@ -40,31 +41,47 @@ def build_research_agent(config: dict):
     Returns:
         编译后的 LangGraph StateGraph (CompiledGraph)
     """
-    provider_name = ""
-    provider_conf = {}
-    for name, conf in config.get("provider", {}).items():
-        if isinstance(conf, dict) and conf.get("models"):
-            provider_name = name
-            provider_conf = conf
-            break
+    # provider_name = ""
+    # provider_conf = {}
+    # for name, conf in config.get("provider", {}).items():
+    #     if isinstance(conf, dict) and conf.get("models"):
+    #         provider_name = name
+    #         provider_conf = conf
+    #         break
 
-    model_id = config.get("agent", {}).get("default_model", "gpt-4")
-    base_url = provider_conf.get("base_url", "")
-    api_key = provider_conf.get("api_key", "not-set")
+    # model_id = config.get("agent", {}).get("default_model", "gpt-4")
+    # base_url = provider_conf.get("base_url", "")
+    # api_key = provider_conf.get("api_key", "not-set")
 
-    if base_url:
-        from lc_agent.core.chat_model import ChatOpenAIReasoning
-        llm = ChatOpenAIReasoning(
-            model=model_id,
-            base_url=base_url,
-            api_key=api_key,
-            temperature=0.3,
-            stream_usage=True,
-        )
-    else:
-        from langchain.chat_models import init_chat_model
-        model_str = f"{provider_name}:{model_id}" if provider_name else model_id
-        llm = init_chat_model(model_str, api_key=api_key, temperature=0.3, stream_usage=True)
+    # if base_url:
+    #     from lc_agent.core.chat_model import ChatOpenAIReasoning
+    #     llm = ChatOpenAIReasoning(
+    #         model=model_id,
+    #         base_url=base_url,
+    #         api_key=api_key,
+    #         temperature=0.3,
+    #         stream_usage=True,
+    #     )
+    # else:
+    #     from langchain.chat_models import init_chat_model
+    #     model_str = f"{provider_name}:{model_id}" if provider_name else model_id
+    #     llm = init_chat_model(model_str, api_key=api_key, temperature=0.3, stream_usage=True)
+    
+    
+    # llm = ChatOpenAIReasoning(
+    #     model='go-deepseek-v4-flash',
+    #     base_url='http://localhost:4000/v1',
+    #     api_key='not_need_key_because_litellm',
+    #     temperature=0.3,
+    #     stream_usage=True,
+    # )
+    llm = create_traced_chat_openai(
+      provider="litellm",
+      model="go-deepseek-v4-flash",
+      base_url="http://localhost:4000/v1",
+      api_key="not_need_key_because_litellm",
+      temperature=0.3,
+    )
 
     async def plan_node(state: ResearchState) -> dict:
         """制定研究计划"""
@@ -120,7 +137,7 @@ def build_research_agent(config: dict):
             return "summarize"
         return "research"
 
-    graph = StateGraph(ResearchState)
+    graph = StateGraph[ResearchState, None, ResearchState, ResearchState](ResearchState)
 
     graph.add_node("plan", plan_node)
     graph.add_node("research", research_node)
