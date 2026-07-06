@@ -99,6 +99,21 @@
     "checkpoint_path": "./bfzs_checkpoints.db"
   },
 
+  "memory": {
+    "enabled": true,
+    "type": "sqlite",
+    "path": "./bfzs_memory.db",
+    "save_policy": "explicit",
+    "retrieval_policy": "manual",
+    "semantic_search": {
+      "enabled": true,
+      "api_key": "{env:NBRAG_API_KEY}",
+      "base_url": "https://api.siliconflow.cn/v1",
+      "model": "BAAI/bge-m3",
+      "dims": 1024
+    }
+  },
+
   "skills": ["./myskills","D:/codes/lc-agent-bfzs/skills_query_feature"],
 
 
