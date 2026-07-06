@@ -14,6 +14,8 @@
     "mcp__nbrag__nbrag_search_and_fetch",
     "mcp__nbrag__nbrag_search_only_bm25",
     "mcp__nbrag__nbrag_search_only_vector",
-    "mcp__nbrag__nbrag_stats"
+    "mcp__nbrag__nbrag_stats",
+    "memory__insert_memory",
+    "memory__search_memories"
   ]
 }

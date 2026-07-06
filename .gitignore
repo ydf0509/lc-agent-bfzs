@@ -227,3 +227,5 @@ pythonlogs/
 .tmp/
 bfzs_data.db-shm
 bfzs_data.db-wal
+bfzs_memory.db
+permissions.jsonc
