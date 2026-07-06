@@ -3,6 +3,7 @@
 import argparse
 from pathlib import Path
 from bfzs import init_loggers
+import my_load_config
 
 def main():
     parser = argparse.ArgumentParser(description="lc-agent-bfzs 自定义 Agent 应用")
