@@ -1,4 +1,4 @@
-﻿---
+---
 name: langchain-query
 description: Use when asked to write code using LangChain, LangGraph, or DeepAgents, or when asked about their latest API syntax and usage patterns. NOT for general Python questions.
 ---

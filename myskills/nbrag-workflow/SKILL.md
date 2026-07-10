@@ -1,4 +1,4 @@
-﻿---
+---
 name: nbrag-workflow
 version: "1.2.0"
 description: >-
