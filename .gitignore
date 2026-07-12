@@ -220,7 +220,11 @@ myskills/query-feature-logic
 skills_query_feature/
 pythonlogs/
 .tmp/
+
 permissions.jsonc
+
+
+
 *.db
 *.db-shm
 *.db-wal

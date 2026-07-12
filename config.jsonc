@@ -81,6 +81,7 @@
     "default_model": "ds-deepseek-v4-flash",
     "streaming": true,
     "recursion_limit":200,
+    "max_subagent_depth": 2,
     "summarization": {
       "enabled": true,
       "default_model": "",
@@ -107,7 +108,7 @@
     "retrieval_policy": "manual",
     "semantic_search": {
       "enabled": true,
-      "api_key": "{env:NBRAG_API_KEY}",
+      "api_key": "{env:NBRAG_API_KEY}", // 可以用环境变量，也可以直接写，我这里直接把配置放到公网，所以用环境变量。
       "base_url": "https://api.siliconflow.cn/v1",
       "model": "BAAI/bge-m3",
       "dims": 1024
@@ -118,12 +119,39 @@
 
 
   "mcp_servers": {
+
     // Web 搜索 MCP
+     // 实时网页搜索 MCP（SSE 方式）
+      // Open Web Search（多引擎搜索 + 文章抓取，Docker 部署）
+      // 启动: docker run -d --name web-search -p 3000:3000 -e ENABLE_CORS=true -e CORS_ORIGIN=* ghcr.io/aas-ee/open-web-search:latest
     "web-search": {
-      "type": "sse",
-      "url": "http://localhost:3000/sse",
+      "type": "http",
+      "url": "http://localhost:3000/mcp",
       "enabled": true
     },
+
+    // 另一个联网mcp，每天免费1000次  https://www.anysearch.com/docs#mcp-transport
+    "anysearch": {
+
+      "type": "http",
+
+      "url": "https://api.anysearch.com/mcp",
+
+      "headers": {
+
+        "Authorization": "Bearer {env:ANYSEARCH_API_KEY}"
+
+      }
+
+    },
+    // sse 模式
+    // "anysearch": { 
+
+    //   "type": "sse",
+
+    //   "url": "http://localhost:8000/sse"
+
+    // }
 
     // 文件系统 MCP：让 AI 读写指定目录的文件，这个是最知名的第三方文件系统MCP
     // ⚠ 必须至少提供一个绝对路径，AI 只能访问列出的目录
@@ -132,6 +160,8 @@
       "type": "local",
       "command": ["npx", "-y", "@modelcontextprotocol/server-filesystem", "D:/codes/nb_agent_bfzs"]
     },
+    
+
 
     // 用户可以先独立方式启动nbrag mcp web服务，也可以使用local模式启动
     "nbrag": {
