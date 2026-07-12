@@ -225,6 +225,7 @@ myskills/query-feature-logic
 skills_query_feature/
 pythonlogs/
 .tmp/
+
 *.db
 *.db-shm
 *.db-wal
