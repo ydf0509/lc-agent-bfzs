@@ -228,3 +228,4 @@ permissions.jsonc
 *.db
 *.db-shm
 *.db-wal
+
