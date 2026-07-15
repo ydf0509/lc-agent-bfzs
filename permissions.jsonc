@@ -23,6 +23,8 @@
     "mcp__web-search__search",
     "memory__list_memories",
     "memory__search_memories",
+    "read_skill_resource",
+    "run_skill_script",
     "subagent_feapder_73fe0f91",
     "subagent_funboost_fda6d9e8",
     "task"
