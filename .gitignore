@@ -228,5 +228,5 @@ permissions.jsonc
 *.db
 *.db-shm
 *.db-wal
-bfzs_data.db.recovered.sql
 
+bfzs_data.db.recovered.sql
