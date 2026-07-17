@@ -32,6 +32,10 @@
 
         {"id": "zzz-fallback-gpt-5.4", "context_limit": 400000, "max_output_tokens": 65536},
         {"id": "zzz-fallback-gpt-5.5", "context_limit": 400000, "max_output_tokens": 65536},
+        {"id": "zzz-fallback-gpt-5.6-sol", "context_limit": 400000, "max_output_tokens": 65536},
+         {"id": "zzz-fallback-gpt-5.6-terra", "context_limit": 400000, "max_output_tokens": 65536},
+          {"id": "zzz-fallback-gpt-5.6-luna", "context_limit": 400000, "max_output_tokens": 65536},
+
 
         // === OpenCodeGo ===
         {"id": "go-glm-5.2", "context_limit": 200000, "max_output_tokens": 65536},
