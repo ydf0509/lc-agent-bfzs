@@ -12,42 +12,42 @@
       "base_url": "http://localhost:4000/v1",
       "models": [
         // === 阿里百炼 ===
-        // {"id": "ali-qwen3.6-plus", "context_limit": 200000, "max_output_tokens": 65536},
-        // {"id": "ali-qwen3.6-flash", "context_limit": 200000, "max_output_tokens": 65536},
-        // {"id": "ali-deepseek-v4-pro", "context_limit": 200000, "max_output_tokens": 65536},
-        // {"id": "ali-deepseek-v4-flash", "context_limit": 200000, "max_output_tokens": 65536},
-        // {"id": "ali-deepseek-v3.2", "context_limit": 200000, "max_output_tokens": 65536},
-        // {"id": "ali-kimi-k2.6", "context_limit": 200000, "max_output_tokens": 65536},
-        // {"id": "ali-kimi-k2.5", "context_limit": 200000, "max_output_tokens": 65536},
-        // {"id": "ali-glm-5.1", "context_limit": 200000, "max_output_tokens": 65536},
-        // {"id": "ali-glm-5", "context_limit": 200000, "max_output_tokens": 65536},
-        // {"id": "ali-MiniMax-M2.5", "context_limit": 200000, "max_output_tokens": 65536},
+        // {"id": "ali-qwen3.6-plus", "context_limit": 200000, "max_output_tokens": 32000},
+        // {"id": "ali-qwen3.6-flash", "context_limit": 200000, "max_output_tokens": 32000},
+        // {"id": "ali-deepseek-v4-pro", "context_limit": 200000, "max_output_tokens": 32000},
+        // {"id": "ali-deepseek-v4-flash", "context_limit": 200000, "max_output_tokens": 32000},
+        // {"id": "ali-deepseek-v3.2", "context_limit": 200000, "max_output_tokens": 32000},
+        // {"id": "ali-kimi-k2.6", "context_limit": 200000, "max_output_tokens": 32000},
+        // {"id": "ali-kimi-k2.5", "context_limit": 200000, "max_output_tokens": 32000},
+        // {"id": "ali-glm-5.1", "context_limit": 200000, "max_output_tokens": 32000},
+        // {"id": "ali-glm-5", "context_limit": 200000, "max_output_tokens": 32000},
+        // {"id": "ali-MiniMax-M2.5", "context_limit": 200000, "max_output_tokens": 32000},
         // === DeepSeek 官方 ===
-        {"id": "ark-deepseek-v4-flash", "context_limit": 200000, "max_output_tokens": 65536},
-        {"id": "zzz-gpt-5.4", "context_limit": 400000, "max_output_tokens": 65536},
-        {"id": "zzz-gpt-5.5", "context_limit": 400000, "max_output_tokens": 65536},
+        {"id": "ark-deepseek-v4-flash", "context_limit": 200000, "max_output_tokens": 32000},
+        {"id": "zzz-gpt-5.4", "context_limit": 400000, "max_output_tokens": 32000},
+        {"id": "zzz-gpt-5.5", "context_limit": 400000, "max_output_tokens": 32000},
 
-        {"id": "zzz-auto-gpt-5.4", "context_limit": 400000, "max_output_tokens": 65536},
-        {"id": "zzz-auto-gpt-5.5", "context_limit": 400000, "max_output_tokens": 65536},
+        {"id": "zzz-auto-gpt-5.4", "context_limit": 400000, "max_output_tokens": 32000},
+        {"id": "zzz-auto-gpt-5.5", "context_limit": 400000, "max_output_tokens": 32000},
 
-        {"id": "zzz-fallback-gpt-5.4", "context_limit": 400000, "max_output_tokens": 65536},
-        {"id": "zzz-fallback-gpt-5.5", "context_limit": 400000, "max_output_tokens": 65536},
-        {"id": "zzz-fallback-gpt-5.6-sol", "context_limit": 400000, "max_output_tokens": 65536},
-         {"id": "zzz-fallback-gpt-5.6-terra", "context_limit": 400000, "max_output_tokens": 65536},
-          {"id": "zzz-fallback-gpt-5.6-luna", "context_limit": 400000, "max_output_tokens": 65536},
+        {"id": "zzz-fallback-gpt-5.4", "context_limit": 400000, "max_output_tokens": 32000},
+        {"id": "zzz-fallback-gpt-5.5", "context_limit": 400000, "max_output_tokens": 32000},
+        {"id": "zzz-fallback-gpt-5.6-sol", "context_limit": 400000, "max_output_tokens": 32000},
+         {"id": "zzz-fallback-gpt-5.6-terra", "context_limit": 400000, "max_output_tokens": 32000},
+          {"id": "zzz-fallback-gpt-5.6-luna", "context_limit": 400000, "max_output_tokens": 32000},
 
 
         // === OpenCodeGo ===
-        {"id": "go-glm-5.2", "context_limit": 200000, "max_output_tokens": 65536},
-        {"id": "go-kimi-k2.7-code", "context_limit": 200000, "max_output_tokens": 65536},
-        {"id": "go-kimi-k2.6", "context_limit": 200000, "max_output_tokens": 65536},
-        {"id": "go-deepseek-v4-pro", "context_limit": 200000, "max_output_tokens": 65536},
-        {"id": "go-deepseek-v4-flash", "context_limit": 200000, "max_output_tokens": 65536},
-        {"id": "go-mimo-v2.5", "context_limit": 200000, "max_output_tokens": 65536},
-        {"id": "go-mimo-v2.5-pro", "context_limit": 200000, "max_output_tokens": 65536},
-        {"id": "go-minimax-m3", "context_limit": 200000, "max_output_tokens": 65536},
-        {"id": "go-qwen3.7-max", "context_limit": 200000, "max_output_tokens": 65536},
-        {"id": "go-qwen3.7-plus", "context_limit": 200000, "max_output_tokens": 65536},
+        {"id": "go-glm-5.2", "context_limit": 200000, "max_output_tokens": 32000},
+        {"id": "go-kimi-k2.7-code", "context_limit": 200000, "max_output_tokens": 32000},
+        {"id": "go-kimi-k2.6", "context_limit": 200000, "max_output_tokens": 32000},
+        {"id": "go-deepseek-v4-pro", "context_limit": 200000, "max_output_tokens": 32000},
+        {"id": "go-deepseek-v4-flash", "context_limit": 200000, "max_output_tokens": 32000},
+        {"id": "go-mimo-v2.5", "context_limit": 200000, "max_output_tokens": 32000},
+        {"id": "go-mimo-v2.5-pro", "context_limit": 200000, "max_output_tokens": 32000},
+        {"id": "go-minimax-m3", "context_limit": 200000, "max_output_tokens": 32000},
+        {"id": "go-qwen3.7-max", "context_limit": 200000, "max_output_tokens": 32000},
+        {"id": "go-qwen3.7-plus", "context_limit": 200000, "max_output_tokens": 32000},
 
 
 
@@ -58,23 +58,23 @@
 
 
 
-        {"id": "ds-deepseek-v4-pro", "context_limit": 200000, "max_output_tokens": 65536},
-        {"id": "ds-deepseek-v4-flash", "context_limit": 200000, "max_output_tokens": 65536},
+        {"id": "ds-deepseek-v4-pro", "context_limit": 200000, "max_output_tokens": 32000},
+        {"id": "ds-deepseek-v4-flash", "context_limit": 200000, "max_output_tokens": 32000},
         // === 字节方舟 Coding Plan ===
-        {"id": "ark-code-latest", "context_limit": 200000, "max_output_tokens": 65536},
-        {"id": "ark-doubao-seed-code", "context_limit": 200000, "max_output_tokens": 65536},
-        {"id": "ark-deepseek-v3.2", "context_limit": 200000, "max_output_tokens": 65536},
-        {"id": "ark-doubao-seed-2.0-code", "context_limit": 200000, "max_output_tokens": 65536},
-        {"id": "ark-doubao-seed-2.0-pro", "context_limit": 200000, "max_output_tokens": 65536},
-        {"id": "ark-doubao-seed-2.0-lite", "context_limit": 200000, "max_output_tokens": 65536},
-        {"id": "ark-minimax-m2.7", "context_limit": 200000, "max_output_tokens": 65536},
-        {"id": "ark-glm-5.1", "context_limit": 200000, "max_output_tokens": 65536},
-        {"id": "ark-kimi-k2.6", "context_limit": 200000, "max_output_tokens": 65536},
+        {"id": "ark-code-latest", "context_limit": 200000, "max_output_tokens": 32000},
+        {"id": "ark-doubao-seed-code", "context_limit": 200000, "max_output_tokens": 32000},
+     
+        {"id": "ark-doubao-seed-2.0-code", "context_limit": 200000, "max_output_tokens": 32000},
+        {"id": "ark-doubao-seed-2.0-pro", "context_limit": 200000, "max_output_tokens": 32000},
+        {"id": "ark-doubao-seed-2.0-lite", "context_limit": 200000, "max_output_tokens": 32000},
+        {"id": "ark-minimax-m3.0", "context_limit": 200000, "max_output_tokens": 32000},
+        {"id": "ark-glm-5.2", "context_limit": 200000, "max_output_tokens": 32000},
+        {"id": "ark-kimi-k2.7-code", "context_limit": 200000, "max_output_tokens": 32000},
 
-        {"id": "ark-deepseek-v4-pro", "context_limit": 200000, "max_output_tokens": 65536},
+        {"id": "ark-deepseek-v4-pro", "context_limit": 200000, "max_output_tokens": 32000},
         // === 公司内部 ===
-        {"id": "com-qwen3.5-397b", "context_limit": 200000, "max_output_tokens": 65536},
-        {"id": "com-qwen3.6-35b", "context_limit": 200000, "max_output_tokens": 65536}
+        {"id": "com-qwen3.5-397b", "context_limit": 200000, "max_output_tokens": 32000},
+        {"id": "com-qwen3.6-35b", "context_limit": 200000, "max_output_tokens": 32000}
         
       ]
     }
@@ -162,7 +162,13 @@
     // 如果编程，不要接入这个filesystem mcp，serena就够了，接入太多mcp会浪费tokens和加大ai决策难度。
     "filesystem": {
       "type": "local",
-      "command": ["npx", "-y", "@modelcontextprotocol/server-filesystem", "D:/codes/nb_agent_bfzs"]
+      "command": ["npx", "-y", "@modelcontextprotocol/server-filesystem", "D:/codes"]
+    },
+
+    
+    "desktop-commander": {
+      "type": "local",
+      "command": ["npx", "-y", "@wonderwhy-er/desktop-commander@latest"],
     },
     
 
